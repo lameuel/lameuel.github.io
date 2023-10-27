@@ -66,7 +66,7 @@
 	.hover:hover + .note {
 		display: block;
 	}
-	.note {
+	#note {
 		color: #C700BF;
 		background: #E6DCAD;
 		display: none;
@@ -75,7 +75,9 @@
 		border: outset;
 		border-width: .2em;
 		border-color: #000000;
-		
+	}
+	.note {
+		color: #C700BF;
 	}
 </style>
 </head>
@@ -90,7 +92,7 @@ El Nuevo Pacto
 
 <p id="para"> <span style="display: block" id="subtitle"><i>Capítulo 1</i></span><br>
 <b><span style="font-size:1.2em">1:1</span> Puesto que ya muchos han tratado de poner en orden la historia de las cosas que vivimos y que han sido ciertísimas.<br>
-<span style="font-size: 1.2em">1:2</span> Nos ha parecido bien a nosotros que hemos sido testigos fieles del poder de <span class="hover">Jesucristo Hijo del Altísimo</span><span class="note">"Hijo de Dios" o "del Altísimo", es solo una forma de presentárnoslo a nosotros los humanos, para que tengamos una mejor comprensión, al relacionar el amor que existe entre padres e hijos.
+<span style="font-size: 1.2em">1:2</span> Nos ha parecido bien a nosotros que hemos sido testigos fieles del poder de <span class="note" onclick="note()">Jesucristo Hijo del Altísimo</span><span id="note">"Hijo de Dios" o "del Altísimo", es solo una forma de presentárnoslo a nosotros los humanos, para que tengamos una mejor comprensión, al relacionar el amor que existe entre padres e hijos.<br><br>
 Dios nos indicó hace muchos años atrás, que no tiene nombre especifico, y por esa razón, elegimos mejor llamarle en esta obra “Altísimo” para que no se confunda con otros personajes.
 </span>, creador del cielo y de la tierra; escribir con diligencia y desde su origen, nuestras experiencias, tal y como sucedieron.<br>
 <span style="font-size: 1.2em">1:3</span> Es nuestro inmenso deseo dejarles por escrito estas experiencias, para que conozcan bien la verdad en la cual serán instruidos. <br>
@@ -125,6 +127,16 @@ Dios nos indicó hace muchos años atrás, que no tiene nombre especifico, y por
 <span style="position: absolute; background-image:url(arrowbuttonback.png); background-size: contain; background-repeat: repeat; font-size: 3.5em;"><a href="index.html">Início</a></span>
 	
 <span style="display: block; text-align: center;"><span style="background-image:url(arrowbutton.png); background-size: contain; background-repeat: repeat; font-size: 3.5em;"><a href="capitulo2.html">Capítulo 2</a></span></span>
+<script>
+	function note() {
+	var x = document.getElementById("note");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+	</script>
 	</body>
 </html>
 

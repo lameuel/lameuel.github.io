@@ -66,7 +66,7 @@
 	.hover:hover + .note {
 		display: block;
 	}
-	#note {
+	.note {
 		color: #C700BF;
 		background: #E6DCAD;
 		display: none;
@@ -75,13 +75,14 @@
 		border: outset;
 		border-width: .2em;
 		border-color: #000000;
+		z-index: 1;
 	}
-	.note {
+	.notelink {
 		color: #C700BF;
 	}
 </style>
 </head>
-<body oncopy="return false" oncut="return false" onpaste="return false">
+<body onclick="noteclose()" oncopy="return false" oncut="return false" onpaste="return false">
 <!--<canvas id="titlecanvas" width="" height="" style="border:1px solid white"></canvas>--> 
 <h1 style="text-align: center"><a id="title" href="http://librodejesucristo.org/">
 	
@@ -92,7 +93,7 @@ El Nuevo Pacto
 
 <p id="para"> <span style="display: block" id="subtitle"><i>Capítulo 1</i></span><br>
 <b><span style="font-size:1.2em">1:1</span> Puesto que ya muchos han tratado de poner en orden la historia de las cosas que vivimos y que han sido ciertísimas.<br>
-<span style="font-size: 1.2em">1:2</span> Nos ha parecido bien a nosotros que hemos sido testigos fieles del poder de <span class="note" onclick="note()">Jesucristo Hijo del Altísimo</span><span id="note">"Hijo de Dios" o "del Altísimo", es solo una forma de presentárnoslo a nosotros los humanos, para que tengamos una mejor comprensión, al relacionar el amor que existe entre padres e hijos.<br><br>
+<span style="font-size: 1.2em">1:2</span> Nos ha parecido bien a nosotros que hemos sido testigos fieles del poder de <span class="notelink" onclick="note()">Jesucristo Hijo del Altísimo</span><span class="note" id="note">"Hijo de Dios" o "del Altísimo", es solo una forma de presentárnoslo a nosotros los humanos, para que tengamos una mejor comprensión, al relacionar el amor que existe entre padres e hijos.<br><br>
 Dios nos indicó hace muchos años atrás, que no tiene nombre especifico, y por esa razón, elegimos mejor llamarle en esta obra “Altísimo” para que no se confunda con otros personajes.
 </span>, creador del cielo y de la tierra; escribir con diligencia y desde su origen, nuestras experiencias, tal y como sucedieron.<br>
 <span style="font-size: 1.2em">1:3</span> Es nuestro inmenso deseo dejarles por escrito estas experiencias, para que conozcan bien la verdad en la cual serán instruidos. <br>
@@ -101,42 +102,216 @@ Dios nos indicó hace muchos años atrás, que no tiene nombre especifico, y por
 <span style="font-size: 1.2em">1:6</span> Algunos de los nombres de los que vivimos estas experiencias, como de aquellos que las escribimos, se mencionarán conforme se desarrolla la historia.<br><br>
 	
 	<span style="display: block; text-align: center; font-size: 1.2em; text-decoration: underline"><i>Vivió entre nosotros como humano</i></span><br>
-<span style="font-size: 1.2em">1:7</span> En el principio era el Verbo, y el Verbo era con El Altísimo, y el Verbo era Dios. Este era en el principio con El Altísimo, y vivió entre nosotros.<br><br>
+<span style="font-size: 1.2em">1:7</span> En el principio era el Verbo, y el Verbo era con El Altísimo, y el Verbo era Dios. Este era en el principio con <span class="notelink" onclick="note2()">El Altísimo, y vivió entre nosotros</span>.<span class="note" id="note2">Jesucristo es desde el principio, y siempre ha estado ahí (era, y es el Verbo) Y el Verbo estaba con (Dios) o sea que uno y otro se estaban acompañando, no que los dos eran uno solo.
+Son dos personajes diferentes, pero iguales en todos aspectos.<br><br>
+
+Y El, Jesucristo, fue enviado a vivir entre nosotros, y como nosotros, para traernos fe, esperanza y vida.<br><br>
+
+Este verso fue escrito de esta forma, solo para que nosotros los mortales entendieramos mejor, porque en el reino de los cielos, todos son iguales, no hay Dios, no hay Padre, no hay Hijo, no hay mayor ni menor, no hay señor ni siervo, fuerte o débil, rico o pobre, no hay jerarquías, no hay milagros porque no hay necesidad de nada, pues todas esas cuestiones solo se necesitan en la tierra.<br><br>
+
+Todos son uno y uno son todos, existe una unidad perfecta y nosotros solo nos limitamos a pensar y deducir lo que leemos de una forma que podamos comprender, pero hay mucho más que no podemos entender o captar.<br><br>
+
+La palabra “Dios” no es un nombre propio, por lo cual no existe ningún problema en mencionarlo como muchos argumentan, más bien es calificativo, y solo se usa como para distinguir a un ser de otro, y recalcar que, por el hecho de ser Dios, tiene poderes o habilidades que un ser humano no posee, y usando esa palabra entendemos mejor, por ser la más apropiada para estos casos, pero la debemos de escribir con mayúscula, para diferenciarlo de los otros dioses que abundan en la tierra, o nombrarlo de diferente forma.
+Por esa razón es mejor decir Él Altísimo, Él Todopoderoso, Él Eterno, para evitar confuciones.<br><br>
+
+Así que, por esa razón, la palabra “dios” se usa para distinguir a alguien que posee algún tipo de poder o aptitud especial, de un ser humano.
+</span><br><br>
 
 <span style="display: block; text-align: center; font-size: 1.2em; text-decoration: underline"><i>Jesucristo es el mismo ayer, hoy, y por los siglos</i></span><br>
-<span style="font-size: 1.2em">1:8</span> Todas las cosas por Él fueron hechas, y sin Él, nada de lo que ha sido hecho, fue hecho. <br>
-<span style="font-size: 1.2em">1:9</span> En Él está la vida, y la vida es la luz de los hombres. <br>
+<span style="font-size: 1.2em">1:8</span> Todas las cosas <span class="notelink" onClick="note3()">por Él</span><span class="note" id="note3">Todo fue hecho por “Ellos”, quienes son iguales y no tienen rango.<br><br>
+
+Al decir el escritor por “él” se refiere a Jesucristo, pero no en el sentido de que era el único que existía, sino de que fue el escogido para realizar todas las tareas acordadas y sería el primogénito en todos aspectos aquí en la tierra, quien nos enseñaría lo que ya conocemos gracias a Él.<br><br>
+
+Y para que entendiéramos mejor, se usó el concepto de padre e hijo.<br><br>
+
+El escritor no pudo comprender la magnitud que este misterio de la pluralidad encierra, y solo se limitó a decir “por Él fueron hechas” Cuando de acuerdo a varios textos del Genesis, se nos muestra que eran varios, y no solo uno.<br><br>
+	
+Cuando debió decir por ellos fueron hechas, pues en el reino celestial todos sus habitantes son “Dioses” para nosotros los humanos, pero entre “Ellos” todos son iguales y trabajan en unidad perfecta y sin distinciones, pues entre.</span> fueron hechas, y sin Él, nada de lo que ha sido hecho, fue hecho. <br>
+<span style="font-size: 1.2em">1:9</span> <span class="notelink" onClick="note4()">En Él está la vida, y la vida es la luz de los hombres.</span><span class="note" id="note4">Y la vida les pertenece eternamente, la luz es la vida y las tinieblas la muerte, y no prevalecerá la muerte sobre la vida nunca como no prevalece la obscuridad sobre la luz.</span> <br>
 <span style="font-size: 1.2em">1:10</span> La luz en las tinieblas resplandece, y las tinieblas no prevalecieron contra ella.<br><br>
 
 <span style="display: block; text-align: center; font-size: 1.2em; text-decoration: underline"><i>Testimonio de Juan</i></span><br>
-<span style="font-size: 1.2em">1:11</span> Hubo un hombre llamado Juan, enviado por “Ellos” para que diese testimonio de la luz, a fin de que todos creyesen por lo que él decía. <br>
-<span style="font-size: 1.2em">1:12</span> No era él la luz, sino para que diese testimonio de la luz fue enviado. <br>
+<span style="font-size: 1.2em">1:11</span> Hubo un hombre llamado Juan, enviado por <span class="notelink" onClick="note5()">“Ellos”</span><span class="note" id="note5">La referencia de que son muchos está en Génesis 1:26 “hagamos”.<br><br>
+
+Juan fue enviado por “Ellos” porque en el reino de los cielos hay muchos habitantes donde todos son iguales, pero para este tiempo el escritor no supo definir con exactitud lo que sucedia, y solo tradujo como lo entendió.<br><br>
+
+La prueba de que son varios y viven en otra dimensión o galaxia se encuentra en Génesis 1:26 donde Dios dice “hagamos” en plural, indicando que se dirigía a alguien más, eso es algo que nuestros antepasados no pudieron comprender, y por esa razón nos enseñaron como ellos lo pudieron captar.</span> para que diese testimonio de la luz, a fin de que todos creyesen por lo que él decía. <br>
+<span style="font-size: 1.2em">1:12</span> No era él la luz, sino para que diese testimonio de <span class="notelink" onClick="note6()">la luz</span><span class="note" id="note6">La luz también representa la eternidad, por eso se escribe así de Juan, queriendo decir que el vino a proclamar lo que Jesucristo afirmaría con su muerte, y sellaría con su resurrección.</span> fue enviado. <br>
 <span style="font-size: 1.2em">1:13</span> Aquella luz verdadera, que alumbra a todo hombre, viene a este mundo. <br>
-<span style="font-size: 1.2em">1:14</span> El mundo por Él fue hecho; y en el mundo estuvo, pero el mundo no le conoció.<br> 
+<span style="font-size: 1.2em">1:14</span> El mundo <span class="notelink" onClick="note7()">por Él fue hecho</span><span class="note" id="note7">La frase “por Él fue hecho” no significa que es el único que existe, sino mas bien que se refiere a Él, porque fue el escogido para la tarea asignada.</span>; y en el mundo estuvo, pero el mundo no le conoció.<br> 
 <span style="font-size: 1.2em">1:15</span> Y Juan dio testimonio de Jesucristo clamando y diciendo: Este es de quien yo decía: El que viene después de mí, es antes de mí; porque era primero que yo. <br>
-<span style="font-size: 1.2em">1:16</span> Porque de su plenitud tomamos todos, y gracia sobre gracia. <br>
-<span style="font-size: 1.2em">1:17</span> Pues la ley por medio de Moisés fue dada, pero la gracia y la verdad, vinieron por medio de Jesucristo. <br>
-<span style="font-size: 1.2em">1:18</span> Al Omnipotente y Poderoso, nadie le vio jamás; el unigénito Hijo, que está en el seno del Padre, Él le ha dado a conocer.<br><br>
+<span style="font-size: 1.2em">1:16</span> Porque de su plenitud tomamos todos, y <span class="notelink" onClick="note8()">gracia sobre gracia</span><span class="note" id="note8">El trabajo de Moisés sobre la ley, terminó al llegar Jesucristo quien introdujo el pacto de la gracia.</span>. <br>
+<span style="font-size: 1.2em">1:17</span> Pues la ley por medio de Moisés fue dada, pero <span class="notelink" onClick="note9()">la gracia y la verdad, vinieron por medio de Jesucristo.</span><span class="note" id="note9">Más claro no se nos puede explicar o enseñar.</span> <br>
+<span style="font-size: 1.2em">1:18</span> <span class="notelink" onClick="note10()">Al Omnipotente y Poderoso, nadie le vio jamás</span><span class="note" id="note10">Solamente Jesucristo ha visto, y estado en compañía y presencia de Dios, nadie mas lo ha experimentado como Él, y ahora está en el lugar en donde estaba antes, guardándonos un lugar para que seamos igual que Él.
+Somos humanos en la tierra y seremos Dioses en el reino de los cielos, así como son “Ellos” por la gracia que se nos concedio por medio de Jesucristo.
+</span>; el unigénito Hijo, que está en el seno del Padre, Él le ha dado a conocer.<br><br>
 
 <span style="display: block; text-align: center; font-size: 1.2em; text-decoration: underline"><i>Misterio que pocos entienden</i></span><br>
-<span style="font-size: 1.2em">1:19</span> A lo suyo vino, pero algunos de los suyos, no le recibieron.<br>
-<span style="font-size: 1.2em">1:20</span> Más a todos los que le recibieron, a los que creen en su nombre, les dio potestad de ser llamados hijos del Altísimo; los cuales no son engendrados de sangre, ni de voluntad de carne, ni de voluntad de varón, sino del Espíritu de Poder el cual recibimos del creador del cielo y de la tierra.<br>
-<span style="font-size: 1.2em">1:21</span> Y aquel Verbo fue hecho carne, y habitó entre nosotros, y vimos su gloria, gloria como del unigénito del Padre, lleno de gracia y de verdad. <br>
+<span style="font-size: 1.2em">1:19</span> A lo <span class="notelink" onClick="note11()">suyo vino</span><span class="note" id="note11">Jesucristo fue escogido para introducir al mundo un nuevo pacto, (suyo vino) el cual incluye entre muchas otras cosas, el privilegio de la vida eterna, y de que seamos llamados hijos del Altísimo; Y eso, muchos no lo quisieron aceptar, y optaron mejor por rechazarlo.</span>, pero algunos de los suyos, no le recibieron.<br>
+<span style="font-size: 1.2em">1:20</span> Más a <span class="notelink" onClick="note12()">todos los que le recibieron, a los que creen en su nombre</span><span class="note" id="note12">Nadie puede comprar este don maravilloso que Él Altísimo nos otorga por medio del Espíritu de Poder, tan solo por creer en Jesucristo.<br><br>
+
+Requisitos para poder ser llamados hijos de Dios, y ser aceptados en el reino de los cielos para vida eterna.
+Recibirlo, y creer en Él.<br><br>
+
+Ser un hijo de Dios equivale a que seamos como Dios, pero solo aquí en la tierra porque en el reino de los cielos todos son iguales.
+</span>, les dio potestad de ser llamados hijos del Altísimo; los cuales no son engendrados de sangre, ni de voluntad de carne, ni de voluntad de varón, sino del <span class="notelink" onClick="note13()">Espíritu de Poder</span><span class="note" id="note13">Nadie puede comprar este don maravilloso que Él Altísimo nos otorga por medio del Espíritu de Poder, tan solo por creer en Jesucristo.<br><br>
+
+Requisitos para poder ser llamados hijos de Dios, y ser aceptados en el reino de los cielos para vida eterna.
+Recibirlo, y creer en Él.<br><br>
+
+Ser un hijo de Dios equivale a que seamos como Dios, pero solo aquí en la tierra porque en el reino de los cielos todos son iguales.
+</span> el cual recibimos del creador del cielo y de la tierra.<br>
+<span style="font-size: 1.2em">1:21</span> Y aquel Verbo <span class="notelink" onClick="note14()">fue hecho carne</span><span class="note" id="note14">Y Jesucristo siendo Dios, vivió entre nosotros como humano para conseguirnos lo que otra cosa no nos pudo lograr: Confianza, fe, esperanza y vida.<br><br>
+
+Jesucristo es llamado el unigénito hijo de Dios, porque fue Él quien inició todo lo que el nuevo pacto nos consiguió, pero todo esto es solo aquí en la tierra, porque en el reino celestial todos son iguales.
+</span>, y habitó entre nosotros, y vimos su gloria, gloria como del unigénito del Padre, lleno de gracia y de verdad. <br>
 <span style="font-size: 1.2em">1:22</span> Y ésta maravillosa historia de fe y esperanza que Jesucristo nos legó, dio inicio cuando un Ser Celestial anuncia al sacerdote Zacarías, el nacimiento de su hijo Juan.</b></p>
 	
 <span style="position: absolute; background-image:url(arrowbuttonback.png); background-size: contain; background-repeat: repeat; font-size: 3.5em;"><a href="index.html">Início</a></span>
 	
 <span style="display: block; text-align: center;"><span style="background-image:url(arrowbutton.png); background-size: contain; background-repeat: repeat; font-size: 3.5em;"><a href="capitulo2.html">Capítulo 2</a></span></span>
+
+
 <script>
 	function note() {
 	var x = document.getElementById("note");
-	if (x.style.display === "none") {
+	if (!x.style.display || x.style.display == "none") {
 		x.style.display = "block";
 	} else {
 	x.style.display = "none";
 	}
 	} 
-	</script>
+</script>
+<script>
+	function note2() {
+	var x = document.getElementById("note2");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	}
+</script>
+<script>
+	function note3() {
+	var x = document.getElementById("note3");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note4() {
+	var x = document.getElementById("note4");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note5() {
+	var x = document.getElementById("note5");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note6() {
+	var x = document.getElementById("note6");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note7() {
+	var x = document.getElementById("note7");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note8() {
+	var x = document.getElementById("note8");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note9() {
+	var x = document.getElementById("note9");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note10() {
+	var x = document.getElementById("note10");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note11() {
+	var x = document.getElementById("note11");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note12() {
+	var x = document.getElementById("note12");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note13() {
+	var x = document.getElementById("note13");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
+<script>
+	function note14() {
+	var x = document.getElementById("note14");
+	if (!x.style.display || x.style.display == "none") {
+		x.style.display = "block";
+	} else {
+	x.style.display = "none";
+	}
+	} 
+</script>
 	</body>
 </html>
 

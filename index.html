@@ -99,29 +99,42 @@
 	a:active {
 		color:#029EB3;
 	}
-	.menu {
+	#menu {
 		animation-name: menu;
 		animation-play-state: paused;
-		animation-duration: 5s;
+		animation-duration: 1s;
 		right: 0;
 		position: fixed;
-		z-index: 5;
-		height: 100%;
-		width: 50%;
+		z-index: 1;
+		height: 100vh;
+		width: 50vw;
 		background-color: red;
 		text-align: center;
 		text-decoration: underline;
 		font-size: 5rem;
 			}
 	@keyframes menu {
-		from {width: 50%;}
-		to {width: 0%;}
+		from {width: 0%;}
+		to {width: 50%;}
+	}
+	#hamburger {
+		right: 1vw;
+		z-index: 2;
+		background-image: url("Hamburger_icon.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right;
+		position: fixed;
+		height: 5vw;
+		width: 5vw;
 	}
 </style>
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
 
-<!-- <div class="menu">Capítulos</div> -->
+<div id="hamburger" onClick="document.getElementById('menu').style.animationPlayState='running'"></div>
+<div id="menu">Capítulos</div>
+	
 <h1 style="text-align: center"><a id="title" href="http://librodejesucristo.org/"> 
 	
 El Libro De JesuCristo:<br>
@@ -191,6 +204,17 @@ a nosotros nos toca continuarlo.</i>
 </p>
 
 <span style="display: block; text-align: center;"><a href="capitulo1.html" class="link" style="background-image:url(arrowbutton.png); background-position: right"><b>Capítulo 1</b></a></span>
+	
+	<script>
+	function menuopen() {
+	var x = document.getElementById("menu");
+	if (!x.style.animationplaystate || x.style.animationplaystate == "paused") {
+		x.style.animationplaystate = "running";
+	} else {
+	x.style.animationplaystate = "paused";
+	}
+	} 
+</script>
 </body>
 </html>
 

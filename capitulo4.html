@@ -122,7 +122,7 @@
 			background-repeat: no-repeat;
 			background-size: auto 100vh;
 			text-align: center;
-			font-size: 4rem;
+			font-size: 3rem;
 			border-left: ridge;
 			text-shadow:
 			-1px -1px 0 #fff, 
@@ -190,13 +190,19 @@
 		<div id="menu" style="display: none">
 			<div id="menuclose" onClick="menuclose()">
 			</div>
-			<h6 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
+			<h4 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
 				Capítulos
-			</h6>
+			</h4>
 			<a href="capitulo1.html" class="menulink">1</a><br>
 			<a href="capitulo2.html" class="menulink">2</a><br>
 			<a href="capitulo3.html" class="menulink">3</a><br>
 			<a href="capitulo4.html" class="menulink">4</a><br>
+            <a class="menulink">5</a><br>
+			<a class="menulink">6</a><br>
+			<a class="menulink">7</a><br>
+			<a class="menulink">8</a><br>
+            <a class="menulink">9</a><br>
+			<a class="menulink">10</a><br>
 		</div>
 		
 		<div id="offclick" onClick="menuclose()">
@@ -267,7 +273,7 @@
 				<span class="number">4:11</span> ¿Quién, pues, será este niño?<br>
 				<span class="number">4:12</span> Y la mano del <span class="notelink" onClick="note6()">Señor</span>
                 <span class="note" id="note6">
-                    Dios Altísimo siempre estuvo con Juan, y muchos fueron liberados por la gran labor que el realizó.
+                    Dios Altísimo siempre estuvo con Juan, y muchos fueron liberados por la gran labor que realizó.
                 </span>
                  Todopoderoso creador del cielo y de la tierra, estaba con él.<br><br>
 
@@ -279,7 +285,7 @@
                     Zacarías no se exhibió, ni hizo escándalo, al ser lleno del Espíritu de Verdad.
                     Solo hizo lo que tenía que hacer.
                     Jesucristo por medio del nuevo pacto, haría de dos pueblos uno, (israelitas y gentiles)
-                    redimiéndonos y librándonos de nuestras angustias y pesares, e iniciando de esa forma, lo que hoy conocemos como cristianismo.
+                    redimiéndonos y librándonos de nuestras angustias y pesares, e iniciando de esa forma, lo que hoy conocemos como pueblo cristiano.
                 </span>, profetizó diciendo: Bendito Él Altísimo, Señor de Israel, que ha visitado y redimido a su pueblo, y nos levantó un poderoso Salvador en la casa de David su siervo.<br>
 				<span class="number">4:14</span> <span class="notelink" onClick="note8()">Para dar luz a los que habitan en tinieblas y en sombra de muerte; Para encaminar nuestros pies por camino de paz.</span>
                 <span class="note" id="note8">
@@ -343,7 +349,7 @@
 			var width = 0;
 			id = setInterval(frame);
 			function frame() {
-				if (width == 35) {
+				if (width == 30) {
 					clearInterval(id);
 				} else {
 					menu.style.display = 'block';
@@ -358,7 +364,7 @@
 		function menuclose() {
 			var offclick = document.getElementById("offclick")
 			var menu = document.getElementById("menu");
-			var width = 35;
+			var width = 30;
 			id = setInterval(frame);
 			function frame() {
 				if (width == 0) {

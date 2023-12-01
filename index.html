@@ -132,7 +132,9 @@
 			position: fixed;
 			height: 5%;
 			width: 5%;
+            margin-top: 5%;
 			margin-right: 1%;
+            cursor: pointer;
 			}
 			#menuclose {
 			background-image: url("arrowbutton.png");
@@ -141,9 +143,9 @@
 			width: 10%;
 			height: 10%;
 			position: absolute;
-			cursor: pointer;
 			margin-left:2%; 
-			margin-top: 5%;
+			margin-top: 10%;
+            cursor: pointer;
 			}
 			#offclick {
 				position: fixed;
@@ -166,12 +168,12 @@
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
 		
-		<div id="hamburger" onClick="menuopen()" style="cursor: pointer">
+		<div id="hamburger" onClick="menuopen()">
 		</div>
 		<div id="menu" style="display: none">
 			<div id="menuclose" onClick="menuclose()">
 			</div>
-			<h6 style="text-decoration-line: underline; margin-top:2%; margin-bottom: 0; text-decoration: underline,">
+			<h6 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
 				Capítulos
 			</h6>
 			<a href="capitulo1.html" class="menulink">1</a><br>

@@ -135,6 +135,8 @@
 			height: 5%;
 			width: 5%;
 			margin-right: 1%;
+            margin-top: 5%;
+            cursor: pointer;
 			}
 			#menuclose {
 			background-image: url("arrowbutton.png");
@@ -145,7 +147,7 @@
 			position: absolute;
 			cursor: pointer;
 			margin-left:2%; 
-			margin-top: 5%;
+			margin-top: 10%;
 			}
 			#offclick {
 				position: fixed;
@@ -176,12 +178,12 @@
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
 		
-		<div id="hamburger" onClick="menuopen()" style="cursor: pointer">
+		<div id="hamburger" onClick="menuopen()">
 		</div>
 		<div id="menu" style="display: none">
 			<div id="menuclose" onClick="menuclose()">
 			</div>
-			<h6 style="text-decoration-line: underline; margin-top:2%; margin-bottom: 0; text-decoration: underline,">
+			<h6 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
 				Capítulos
 			</h6>
 			<a href="capitulo1.html" class="menulink">1</a><br>
@@ -617,6 +619,56 @@
 		<script>
 			function note18() {
 				var x = document.getElementById("note18");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+					} else {
+					x.style.display = "none";
+				}
+			} 
+		</script>
+        <script>
+			function note19() {
+				var x = document.getElementById("note19");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+					} else {
+					x.style.display = "none";
+				}
+			} 
+		</script>
+        <script>
+			function note20() {
+				var x = document.getElementById("note20");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+					} else {
+					x.style.display = "none";
+				}
+			} 
+		</script>
+        <script>
+			function note21() {
+				var x = document.getElementById("note21");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+					} else {
+					x.style.display = "none";
+				}
+			} 
+		</script>
+        <script>
+			function note22() {
+				var x = document.getElementById("note22");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+					} else {
+					x.style.display = "none";
+				}
+			} 
+		</script>
+        <script>
+			function note23() {
+				var x = document.getElementById("note23");
 				if (!x.style.display || x.style.display == "none") {
 					x.style.display = "block";
 					} else {

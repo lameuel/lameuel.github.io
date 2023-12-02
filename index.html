@@ -17,8 +17,9 @@
 		
 		<style>
     		body {
+            background-position: right;
 			background-image:url(sky-wallpaper-high-definition.jpg);
-			background-size:cover;
+			background-size: cover;
 			background-attachment: fixed;
 			background-repeat:no-repeat;
 			font-family:'Georgia','Times New Roman', Times, serif, 'arial';
@@ -54,7 +55,7 @@
 			-1px 1px 0 #fff, 
 			1px 1px 0 #fff;
 			text-decoration:underline;
-			font-size:2.5em; 
+			font-size:6vw; 
 			text-align: center;
 			}
     		#para {
@@ -63,6 +64,7 @@
 			font-size:2em;
 			margin-left:7vw; 
 			margin-right:7vw;
+            background:#ffffff;
 			background:rgba(255, 255, 255, .5);
 			border-style:groove;
 			border-width:thick;
@@ -103,7 +105,7 @@
 			color:#029EB3;
 			}
 			#menu {
-            display: none;
+            qdisplay: none;
 			top: 0;
 			right: 0;
 			position: fixed;
@@ -113,16 +115,17 @@
 			background-image: url("crystallized-sky-wallpaper-high-definition.jpg");
 			background-position: right;
 			background-repeat: no-repeat;
-			background-size: auto 100vh;
+			background-size: cover;
+            background-attachment: fixed;
 			text-align: center;
-			font-size: 3rem;
-			border-left: ridge;
+			font-size: 4vw;
+			bordr-left: ridge;
 			text-shadow:
 			-1px -1px 0 #fff, 
 			1px -1px 0 #fff, 
 			-1px 1px 0 #fff, 
 			1px 1px 0 #fff;
-            overflow-y: scroll;
+            overflow-y: auto;
             overflow-x: hidden;
 			}
 			#hamburger {
@@ -133,12 +136,34 @@
 			background-size: contain;
 			background-position: right;
 			position: fixed;
-			height: 5%;
-			width: 5%;
-            margin-top: 5%;
+			height: 5vw;
+			width: 5vw;
 			margin-right: 1%;
+            margin-top: 5%;
             cursor: pointer;
 			}
+            #tab {
+            text-align: center;
+            background-position: center;
+            background-image: url(tab.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            rotate: 270deg;
+            z-index: 1;
+			position: fixed;
+            top: 35vh;
+            right: -8vw;
+            cursor: pointer;
+            font-size: 2.8vw;
+            width: 20vw;
+            height: 4vw;
+            text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+            text-decoration-line: underline;
+            }
 			#menuclose {
 			background-image: url("arrowbutton.png");
 			background-size: contain;
@@ -170,9 +195,9 @@
 		</style>
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
-		
-		<div id="hamburger" onClick="menuopen()">
-		</div>
+		<a id="tab" onClick="menuopen()">
+            Capítulos
+		</a>
 		<div id="menu">
 			<div id="menuclose" onClick="menuclose()">
 			</div>

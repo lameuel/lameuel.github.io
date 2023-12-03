@@ -77,6 +77,21 @@
 			-ms-user-select: none;
 			user-select: none;
 			}
+            .notelink {
+            color: #CE0CBB;
+            }
+            .note {
+            display: none;
+            color: #CE0CBB;
+            position: absolute;
+            background-color: antiquewhite;
+            border: ridge;
+            border-width: thick;
+            z-index: 3;
+            border-color: antiquewhite;
+            padding: .3%;
+            margin-right: 7vw;
+            }
 			.subtitle {
 			display: block; 
 			font-size: 1.2em;
@@ -91,6 +106,14 @@
 			padding-left: 2%;
 			padding-right: 2%;
 			}
+            #seperator {
+            font-size: 3.5em;
+            text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+            }
 			a:link, a:visited {
 			color:#000;
 			text-shadow:
@@ -415,9 +438,8 @@
 		</span>
 		<span style="display: block; text-align: center;">
 			<a href="capitulo2.html" class="link" style="background-image:url(arrowbuttonback.png);">
-				<b>Capítulo 2</b>
-			</a>
-			<span class="seperator">
+				<b>Capítulo 2</b></a>
+			<span id="seperator">
 				<b>|</b>
 			</span>
 			<a href="capitulo4.html" class="link" style="background-image:url(arrowbutton.png); background-position: right">

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-62QE2H0XM7">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-62QE2H0XM7');
+		</script>
+		
+		<title>
+			El Libro de Jesucristo | Capitulo 6
+		</title>
+		<style>
+			body {
+            background-position: right;
+			background-image:url(sky-wallpaper-high-definition.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat:no-repeat;
+			font-family:'Georgia','Times New Roman', Times, serif, 'arial';
+			}
+    		#title {
+			color:#03dffc;
+			text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+			text-decoration:none;
+			font-size:2em; 
+			}
+			#author {
+			color:#000000;
+			font-size:1.5em; 
+			text-align:justify; 
+			margin-left:25vw; 
+			margin-right:25vw;
+			background:rgba(255, 255, 255, .5);
+			border-style:groove;
+			border-width:thick;
+			border-color:antiquewhite;
+			padding:.1em;
+			text-align: center;
+			}
+			#chapter {
+			color:#000000;
+			text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+			text-decoration:underline;
+			font-size:6vw; 
+			text-align: center;
+			}
+    		#para {
+			color:#000000;
+			text-align: justify;
+			font-size:2em;
+			margin-left:7vw; 
+			margin-right:7vw;
+            background:#ffffff;
+			background:rgba(255, 255, 255, .5);
+			border-style:groove;
+			border-width:thick;
+			border-color:antiquewhite;
+			padding:.3em;
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			}
+            .notelink {
+            color: #CE0CBB;
+            cursor: pointer;
+            }
+            .note {
+            display: none;
+            color: #CE0CBB;
+            position: absolute;
+            background-color: antiquewhite;
+            border: ridge;
+            border-width: thick;
+            z-index: 3;
+            border-color: antiquewhite;
+            padding: .3%;
+            margin-right: 7vw;
+            }
+			.subtitle {
+			display: block; 
+			font-size: 1.2em;
+			text-align: center;
+			text-decoration: underline;
+			font-style: italic;
+			}
+			.link {
+			background-size: contain; 
+			background-repeat: no-repeat; 
+			font-size: 3.5em;
+			padding-left: 2%;
+			padding-right: 2%;
+			}
+            #seperator {
+            font-size: 3.5em;
+            text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+            }
+			a:link, a:visited {
+			color:#000;
+			text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+			}
+			a:hover {
+			color:#03dffc;
+			}
+			a:active {
+			color:#029EB3;
+			}
+			#menu {
+            qdisplay: none;
+			top: 0;
+			right: 0;
+			position: fixed;
+			z-index: 2;
+			height: 100vh;
+			width: 0;
+			background-image: url("crystallized-sky-wallpaper-high-definition.jpg");
+			background-position: right;
+			background-repeat: no-repeat;
+			background-size: cover;
+            background-attachment: fixed;
+			text-align: center;
+			font-size: 4vw;
+			bordr-left: ridge;
+			text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+            overflow-y: auto;
+            overflow-x: hidden;
+			}
+			#hamburger {
+			right: 1vw;
+			z-index: 1;
+			background-image: url("Hamburger_icon.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: right;
+			position: fixed;
+			height: 5vw;
+			width: 5vw;
+			margin-right: 1%;
+            margin-top: 5%;
+            cursor: pointer;
+			}
+            .tab {
+            text-align: center;
+            background-position: center;
+            background-image: url(tab.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            rotate: 270deg;
+            z-index: 1;
+			position: fixed;
+            top: 35vh;
+            right: -8vw;
+            cursor: pointer;
+            font-size: 2.8vw;
+            width: 20vw;
+            height: 4vw;
+            text-shadow:
+			-1px -1px 0 #fff, 
+			1px -1px 0 #fff, 
+			-1px 1px 0 #fff, 
+			1px 1px 0 #fff;
+            text-decoration-line: underline;
+            }
+			#menuclose {
+			background-image: url("arrowbutton.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 10%;
+			height: 10%;
+			position: absolute;
+			margin-left:2%; 
+			margin-top: 10%;
+            cursor: pointer;
+			}
+			#offclick {
+                position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+			}
+            #offclick {
+                position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+			}
+            #offclicknote {
+                position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+			}
+			.transparent {
+				zoom: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+				-moz-opacity: 0;
+				-khtml-opacity: 0;
+				opacity: 0;
+			}
+			.menulink {
+				text-decoration-line: none;
+			}
+		</style>
+	</head>
+	<body oncopy="return false" oncut="return false" onpaste="return false">
+		<a class="tab" onClick="menuopen()">
+            Capítulos
+		</a>
+		<div id="menu" style="display: none">
+			<div id="menuclose" onClick="menuclose()">
+			</div>
+			<h4 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
+				Capítulos
+			</h4>
+            <a href="capitulo1.html" class="menulink">1</a><br>
+			<a href="capitulo2.html" class="menulink">2</a><br>
+			<a href="capitulo3.html" class="menulink">3</a><br>
+			<a href="capitulo4.html" class="menulink">4</a><br>
+            <a href="capitul05.html" class="menulink">5</a><br>
+			<a href="capitulo6.html" class="menulink">6</a><br>
+			<a class="menulink">7</a><br>
+			<a class="menulink">8</a><br>
+            <a class="menulink">9</a><br>
+			<a class="menulink">10</a><br>
+		</div>
+		
+		<div id="offclick" onClick="menuclose()">
+		</div>
+        <div id="offclicknote" onClick="noteclose()">
+		</div>
+        
+		<h1 style="text-align: center">
+			<a id="title" href="http://librodejesucristo.org/">
+				El Libro De JesuCristo:<br>
+				El Nuevo Pacto
+			</a>
+		</h1>
+		
+		
+		
+		<p id="para">
+			<span style="display: block" id="chapter">
+				<i>Capítulo 6</i>
+			</span><br>
+			
+			<b>
+			<span class="subtitle">
+				La visita de los sabios
+			</span><br>
+			
+			<span class="number">6:1</span> Cuando Jesús <span class="notelink" onClick="note()">nació</span>   
+            <span class="note" id="note">
+				El nacimiento de Jesús fue un gran acontecimiento y vinieron algunos invitados a celebrarlo y algunos de ellos trajeron regalos.
+                Por lo cual nosotros también podemos seguir ese ejemplo y celebrar nuestro nacimiento no importa como queramos llamarle.
+                Inclusive le cantaron las huestes celestiales, hubo invitados y presentes.
+			</span>
+            en Belén de Judea en días del rey Herodes, vinieron del <span class="notelink" onClick="note1()">sureste</span><span class="note" id="note1">
+                La palabra “oriente” no fue traducida correctamente, “sureste” es lo apropiado.
+            </span>
+            a Jerusalén unos sabios, diciendo: ¿Dónde está el <span class="notelink" onClick="note2()">rey de los judíos, que ha nacido?</span>
+            <span class="note" id="note2"> 
+                Jesús no iba a ser Rey, nació Rey.
+                Y esos mismos privilegios nos ofrecería con el tiempo, al enseñarnos que, si confiamos en Él,
+                un día seríamos como Él, y viviríamos con Él.
+                Los sabios que llegaron con Herodes, inocentemente le preguntaron por Jesús, y con esa afirmación ya estaban confirmando la profecía, al decir lo que Jesús era, pero obviamente a Herodes no le gusto para nada, se turbó y se sintió humillado al considerarse único rey en esa área. 
+                Y más se disgustó, porque los sabios le indicaron que ya había nacido, y que iban e camino a adorarle, en el lugar que la estrella que miraron les indicaba.
+            </span>
+                Porque su estrella hemos visto en el <span class="notelink" onclick="note3()">oriente</span><span class="note" id="note3">
+                Los sabios venían de algún lugar del sureste de Jerusalén, pero era como el noreste de Belén, así que, por esa razón, al ver la estrella en el oriente “sureste” pensaron que el nacimiento seria en Jerusalén, ya que Belén está relativamente muy cerca, y fue fácil confundirse.
+
+                Estos versos indican claramente que los magos “sabios” llegaron cuando Jesús nació, no antes ni después, ya que fueron muy claros al decir “que ha nacido” marcando un tiempo presente.
+                </span>,  y venimos a adorarle.<br>
+			<span class="number">6:2</span> Oyendo esto, el rey Herodes se <span class="notelink" onClick="note4()">turbó, y toda</span>
+            <span class="note" id="note4">
+                Herodes perdió la cordura al estar frente a los sabios, de tal manera que inmediatamente averiguo sobre ese tema, y quiso hacer algo al respecto.<br>
+
+                Decir “toda Jerusalén se turbo” es incorrecto, pues muchos ya sabían sobre esta profecía.
+                Y los versos 2:5,6 lo afirman.
+            </span>
+              Jerusalén con él.<br> 
+            <span class="number">6:3</span> Y <span class="notelink" onClick="note5()">convocando</span>
+            <span class="note" id="note5">
+                Así como sucede en nuestros tiempos, 
+                muchos no sabían nada de lo que sucedería,
+                y otros no le daban importancia.<br>
+
+                El rey Herodes no sabía.
+                Y los sacerdotes y escribas si sabían, pues respondieron correctamente,
+                pero no le dieron importancia.
+            </span>
+             a todos los principales sacerdotes, y los escribas del pueblo, les preguntó dónde había de nacer el Cristo.<br>
+			<span class="number">6:4</span> Ellos le dijeron: En Belén de Judea; porque <span class="notelink" onClick="note6()">así está escrito</span>
+            <span class="note" id="note6">
+                   Indudablemente que si estaban enterados de las profecías porque hasta dijeron “así está escrito” pero simplemente no lo mencionaban. 
+            </span>
+              por el profeta: Y tú, <span class="notelink" onClick="note7()">Belén, de la tierra de Judá</span><span class="note" id="note7">
+                La ciudad o provincia más pequeña,
+                fue escogida para que ahí naciera el redentor
+                del mundo.<br>
+                Es probable que por esa razón los sabios se equivocaron, pensando que como Jerusalén era una ciudad más importante, ahí nacería el Rey; pero no fue así.
+            </span>:  No eres la más pequeña entre los príncipes de Judá; Porque de ti saldrá <span class="notelink" onClick="note8()">un guiador</span><span class="note" id="note8">
+                Para este tiempo, toda la tierra que habían habitado las doce tribus de Israel, ya estaban divididas en tres regiones con su nombre cada una: Galilea, Samaria y Judea.
+                Jesús nació en Belén de Judá, o Judea que es lo mismo, y por esa razón es judío, pero anduvo predicando por las regiones mencionadas y sus alrededores.
+            </span>,  que apacentará <span class="notelink" onClick="note9()">a mi pueblo Israel</span><span class="note" id="note9">
+                El Israel al que se refiere este verso, y que será apacentado, no es un pedazo de tierra, porque en este tiempo ni siquiera existía eso.
+                Se refiere más bien a la gente que formaba el pueblo de Israel tradicional, el cual, con la venida y enseñanzas de Jesucristo, se convertiría por fe, en el Israel espiritual, por esa razón dice; “un guiador” porque Él nos traería la doctrina del nuevo pacto, la cual solo se puede adoptar por fe, y al hacerlo así; pasamos a ser pueblo de Dios Altísimo. Cumpliéndose así la profecía de “pueblo eterno y amado”.
+                En nuestros días ya no existe la sangre original del pueblo hebreo, israelita o judío, pues fueron absorbidos por el tiempo, los malos tratos, y por las futuras razas con las que se mesclaron.
+                Solo quedaron sus tradiciones y creencias las cuales llevan por nombre “judaísmo.”
+            </span>.<br>
+			<span class="number">6:5</span> Entonces Herodes, llamando en secreto a los sabios, les pregunto astutamente, el tiempo de la aparición de la estrella; y enviándolos a Belén, dijo: Id allá y averiguad con diligencia acerca del niño; y cuando le halléis, <span class="notelink" onClick="note10()">hacédmelo saber</span><span class="note" id="note10">
+                La hipocresía en toda la extensión de la palabra.
+                Herodes quería información del niño para deshacerse de él.
+            </span>, para que yo también vaya y le adore.<br>
+			<span class="number">6:6</span> Y habiendo oído al rey, se fueron; y he aquí la <span class="notelink" onclick="note11()">estrella</span>
+			<span class="note" id="note11">
+				Desde un principio la estrella estuvo indicando el lugar exacto del lugar de nacimiento,
+                pero es posible que hubo un desacuerdo entre los sabios, y por esa razón llegaron primero a Jerusalén, y de ahí continuaron hacia Belén.
+			</span>
+			 que habían visto, estaba delante de ellos, indicándoles donde estaba el recién nacido. <br>
+                <span class="number">6:7</span> Y llegando a Belén, se regocijaron con muy grande gozo; y <span class="notelink" onClick="note12()">entrando</span>
+                <span class="note" id="note12">
+                    Error de traducción.<br>
+                    No era una casa, era un establo donde pasaron la noche, es probable que no conocían la palabra “casa”.<br>
+                    En esos tiempos le llamaban aposento. 2 Reyes 4:10
+                </span> vieron al niño, y postrándose, <span class="notelink" onClick="note13()">celebraron y lo adoraron</span><span class="note" id="note13">
+                    Este momento fue sin duda muy especial para los sabios, quienes celebraron el acontecimiento junto con los demás, y lo demostraron ofreciendo lo mejor que tenían.
+                    Interés.
+                    Disposición.
+                    Oro.
+                    Incienso.
+                    Mirra.
+                </span>.<br>
+			<span class="number">6:8</span> Y abriendo sus tesoros, le ofrecieron presentes: oro, incienso y mirra.<br>
+			<span class="number">6:9</span> Pero siendo avisados por <span class="notelink" onClick="note14()">revelación</span>
+            <span class="note" id="note14">
+				Indudablemente que había otros caminos para entrar y salir del lugar donde estaban, así que, fueron instruidos por Dios Altísimo a través de los sueños, para que no regresaran por donde mismo.
+			</span> en sueños que no volviesen a Herodes, regresaron a su tierra por otro camino.<br><br>
+                
+            <span class="subtitle">
+				Jesús es circuncidado
+			 </span><br>
+                
+			<span class="number">6:10</span> Cumplidos los <span class="notelink" onClick="note15()">ocho días</span>
+            <span class="note" id="note15">
+                    El nombre se le ponía oficialmente, justo a los ocho días de nacido, y era una ceremonia diferente a la presentación que se practica en la actualidad.<br>
+
+                    Primero los circuncidaban y les ponían el nombre, y después los presentaban ante Dios.<br>
+                    De acuerdo a las escrituras, solo tenían que presentar a los primogénitos varones.<br>
+
+                    Fechas importantes.<br>
+                    No era sábado ni domingo, era el octavo día, en este tiempo no llamaban los días por nombre.
+            </span> para circuncidar al niño, le pusieron por nombre JESÚS, el cual le había sido puesto por el Ser celestial enviado del cielo; antes que fuese concebido.<br><br>
+            
+            <span class="subtitle">
+				Presentación de Jesús en el templo
+            </span><br>
+                
+			<span class="number">6:11</span> Y cuando se <span class="notelink" onClick="note16()">cumplieron</span>
+            <span class="note" id="note16">
+                En estos tiempos los padres no podían presentarse ante el sacerdote para presentar a sus hijos, antes de cumplir los días de la purificación. 
+
+                Así que, primero les ponían el nombre, y después los presentaban.
+                Eran dos celebraciones diferentes, que se llevaban a cabo.
+            </span>
+            los días de la purificación de José y María, conforme a la ley que Dios Altísimo dio a Moisés, presentaron a Jesús en Jerusalén ante El Todopoderoso; pues está escrito en la ley: <span class="notelink" onClick="note17()">Todo varón</span>
+            <span class="note" id="note17">
+                Solo el primer hijo varón (primogénito) era dedicado y presentado a Dios Altísimo.
+            </span>
+              que abriere la matriz será apartado y <span class="notelink" onClick="note18()">dedicado</span>
+            <span class="note" id="note18">
+                    Santo significa: Apartado o dedicado a Dios Altísimo.
+            </span>
+              al Señor, y ofrecerán, un par de tórtolas, o dos palominos.<br><br>
+			<span class="number">6:12</span> Y había en Jerusalén un hombre llamado Simeón, y este hombre, justo y piadoso, esperaba <span class="notelink" onClick="note19()">la consolación de Israel</span><span class="note" id="note19">
+                La consolación de Israel es la gloria, orgullo o satisfacción, al cumplirse la profecía, de que, de esa comunidad o pueblo, llegó finalmente, la revelación del que sería el que traería, salvación, redención, luz a los gentiles (pecadores) y la afirmación del pueblo amado eternamente por Dios Altísimo.
+
+                El Pueblo que Dios Altísimo inicio hace muchos años por fe, con su siervo Abraham, se estaba confirmando con el nacimiento de Jesús.
+			</span>; y <span class="notelink" onClick="note20()">movido</span>
+            <span class="note" id="note20">
+                    Dios Altísimo nos muestra por medio de sueños, por un sentir en nuestro ser, o de una forma u otra lo que debemos hacer.
+            </span>
+             por el Espíritu de Poder, vino al templo, pues le había sido revelado que no vería la muerte antes que viese al Ungido del Todopoderoso.<br>
+			<span class="number">6:13</span> Y cuando los padres del niño Jesús, lo trajeron al templo, para hacer por él conforme al rito de la ley; Simeón le tomó en sus brazos, y dio gracias diciendo: Ahora, mi Señor Todopoderoso, despide a tu siervo en paz; Porque <span class="notelink" onClick="note21()">conforme</span>
+            <span class="note" id="note21">
+                Se le cumplió la promesa de no morir, hasta que viera al salvador y redentor del mundo.
+                Y no solo lo vio, sino que lo tuvo en sus brazos y lo presento ante Dios Altísimo.
+            </span> 
+            a tu palabra, mis ojos han visto tu <span class="notelink" onClick="note22()">salvación</span><span class="note" id="note22">
+                Nosotros como Simeón, debemos mostrar gozo y agradecimiento a Dios Altísimo, porque a partir de ese momento la redención para (los gentiles y todos aquellos que la buscaran) se estaba preparando.
+            </span>, la cual has preparado en presencia de todos los pueblos.<br>
+			<span class="number">6:14</span> Luz para revelación a los gentiles: Y <span class="notelink" onClick="note23()">gloria</span>
+            <span class="note" id="note23">
+                    La gloria de la cual habla Simeón, es que el nombre Israel seria recordado por la eternidad como una comunidad que obedeció y sirvió como un instrumento para conducirnos hacia Dios Altísimo, pero que caducó al ofrecernos Jesucristo un nuevo pacto.
+            </span>
+            de tu <span class="notelink" onClick="note24()">pueblo Israel</span><span class="note" id="note24">
+                    El pueblo de Israel que se menciona en el Antiguo Testamento, es simbólico, y nos estaba dirigiendo hacia la patria que un día nacería por fe, y a la cual Dios Altísimo prometió amar eternamente.<br>
+                    Nunca se refirió a un pedazo de tierra, ni mucho menos al lugar que hoy existe con el nombre de Israel.<br>
+                    Ya que, en el tiempo del Antiguo Testamento, ni siquiera existía un pedazo de tierra con ese nombre, pues no era el propósito original.<br>
+
+                    El pueblo que la profecía indica, es el que Jesucristo instituyó, y que lo conformamos todos los nacidos por gracia hacia una nueva vida por fe, y para vivir en la patria celestial.
+            </span>.<br>
+			<span class="number">6:15</span> Escuchando María y José, estaban maravillados de todo lo que se decía del niño Jesús.<br>
+			<span class="number">6:16</span> Y los bendijo Simeón, y mirando a María le dijo: <span class="notelink" onClick="note25()">He aquí: Este niño está puesto para caída y para levantamiento de muchos en Israel, y para señal que será contradicha</span><span class="note" id="note25">
+                Este verso encierra todo lo que Jesucristo viviría, 
+                y Simeón lo estaba profetizando en pocas palabras.<br>
+
+                Muchos que lo quisieron ver derrotado cayeron, incluyendo a los israelitas rebeldes, pero muchos más que confiaron en Él fueron levantados por fe.
+            </span>
+             y una espada traspasará tu misma alma, para que sean revelados los pensamientos de muchos <span class="notelink" onClick="note26()">corazones</span><span class="note" id="note26">
+                    Todas estas tristezas que Simeón le dijo a José y María, por medio de esta profecía, tenían que suceder para que se pudieran revelar los pensamientos de todos los corazones, y fuera efectivo el pacto que Jesucristo nos presentaría.
+            </span>.<br>
+			<span class="number">6:17</span> También estaba ahí Ana, profetiza, hija de Fanuel, de la tribu de Aser, de edad muy avanzada, quien era viuda por ochenta y cuatro años; pues solo vivió con su marido siete años desde su virginidad, y después quedo viuda.<br>
+			<span class="number">6:18</span> Y no se apartaba del templo, sirviendo de noche y de día con ayuno y oración.<br>
+			<span class="number">6:19</span> Ella presentándose en la misma hora en que sucedía todo esto; daba gracias a Dios Altísimo, y también <span class="notelink" onClick="note27">hablaba del niño</span>
+            <span class="note" id="note27">
+                También Ana hablaba de Jesús a la gente, 
+                y les platicaba que la redención estaba cerca.
+            </span>
+             a todos los que esperaban la redención en Jerusalén.<br><br>
+                
+            <span class="subtitle">
+                El Altísimo habla a José en sueños    
+            </span><br>
+                
+            <span class="number">6:20</span> Después que <span class="notelink" onClick="note28()">partieron</span>
+            <span class="note" id="note28">
+                No se sabe cuanto tiempo se estuvieron en ese lugar los magos, pero después de que se fueron, 
+                José fue instruido para que se fueran a Egipto.
+            </span>
+             los sabios, he aquí un Ser Celestial apareció en sueños a José y le dijo: Levántate, toma al niño y a su madre, y vayan a Egipto, y ahí quédense; porque acontecerá que Herodes buscara al niño para matarlo. <br>
+            <span class="number">6:21</span> Y despertando José de su sueño, espero que fuera <span class="notelink" onClick="note29()">de noche</span><span class="note" id="note29">
+                Era muy común para ellos hacer viajes a cualquier hora, por lo que no tuvieron problema de salir en la noche.
+            </span>, y tomo a María su mujer y al niño, y se fueron para Egipto.<br>
+            <span class="number">6:22</span> Y se quedaron ahí hasta la muerte de Herodes; para que se cumpliese lo que dijo el Señor por medio del profeta, cuando dijo: De Egipto llamé a mi Hijo.<br><br>
+            
+            <span class="subtitle">
+                Niños de Belén sacrificados 
+            </span><br>
+            <span class="number">6:23</span> Herodes entonces, cuando se vio burlado por los sabios, se enojó mucho, y mandó matar a todos los niños menores de dos años que había en Belén y en todos sus alrededores, <span class="notelink" onClick="note30()">conforme al tiempo</span>
+            <span class="note" id="note30">
+                No se sabe exactamente cuantas semanas o meses pasaron antes de que Herodes se diera cuenta de que los sabios no regresaron, pero la frase “Conforme al tiempo” significa que Herodes calculó el tiempo en que habló con los sabios, y para no fallar decidió matar a los niños de dos años para abajo.    
+            </span>
+             que había inquirido de los sabios.<br>
+            <span class="number">6:24</span> Así se cumplió lo que fue dicho por el profeta Jeremías, cuando dijo: Voz fue oída en Ramá, grande lamentación, lloro y gemido; <span class="notelink" onClick="note31()">Raquel que llora</span>
+            <span class="note" id="note31">
+                    En estos tiempos se usaban mucho los dichos o símbolos para dar más énfasis a lo que se decía, y en esta ocasión se refería a la amargura y sufrimiento que Raquel paso al ver a sus hijos pasar por sufrimientos y violencia.
+            </span>
+             a sus hijos, y no quiso ser consolada, porque perecieron.
+			</b>
+		</p>
+		
+		<span style="display: block; text-align: center;">
+			<a href="index.html" class="link" style="background-image:url(arrowbuttonback.png);">
+				<b>Início</b>
+			</a>
+		</span>
+		<span style="display: block; text-align: center;">
+			<a href="capitulo5.html" class="link" style="background-image:url(arrowbuttonback.png);">
+				<b>Capítulo 5</b></a>
+			<!--<span id="seperator">
+				<b>|</b>
+			</span>
+			<a href="capitulo6.html" class="link" style="background-image:url(arrowbutton.png); background-position: right">
+				<b>Capítulo 6</b>
+			</a>-->
+		</span>
+		<script>
+		function menuopen() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 0;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 30) {
+					clearInterval(id);
+				} else {
+					menu.style.display = 'block';
+					width++;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'block';
+				}
+			}
+		}
+		</script>
+		<script>
+		function menuclose() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 30;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 0) {
+					clearInterval(id);
+					menu.style.display = 'none'
+				} else {
+					width--;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'none';
+					
+				}
+			}
+		}
+		</script>
+        <script>
+            function noteclose(){
+                var notes = document.getElementsByClassName('note');
+                var offclick = document.getElementById('offclicknote');
+                for(i = 0; i < notes.length; i++) {
+                    notes[i].style.display = 'none';
+                    offclick.style.display = 'none';
+                }
+            }
+        </script>
+		<script>
+			function note() {
+				var x = document.getElementById("note");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note1() {
+				var x = document.getElementById("note1");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note2() {
+				var x = document.getElementById("note2");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			}
+		</script>
+		<script>
+			function note3() {
+				var x = document.getElementById("note3");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note4() {
+				var x = document.getElementById("note4");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note5() {
+				var x = document.getElementById("note5");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note6() {
+				var x = document.getElementById("note6");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note7() {
+				var x = document.getElementById("note7");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note8() {
+				var x = document.getElementById("note8");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note9() {
+				var x = document.getElementById("note9");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note10() {
+				var x = document.getElementById("note10");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note11() {
+				var x = document.getElementById("note11");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note12() {
+				var x = document.getElementById("note12");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note13() {
+				var x = document.getElementById("note13");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note14() {
+				var x = document.getElementById("note14");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note15() {
+				var x = document.getElementById("note15");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note16() {
+				var x = document.getElementById("note16");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note17() {
+				var x = document.getElementById("note17");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note18() {
+				var x = document.getElementById("note18");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note19() {
+				var x = document.getElementById("note19");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note20() {
+				var x = document.getElementById("note20");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note21() {
+				var x = document.getElementById("note21");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note22() {
+				var x = document.getElementById("note22");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note23() {
+				var x = document.getElementById("note23");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note24() {
+				var x = document.getElementById("note24");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note25() {
+				var x = document.getElementById("note25");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note26() {
+				var x = document.getElementById("note26");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note27() {
+				var x = document.getElementById("note27");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note28() {
+				var x = document.getElementById("note28");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note29() {
+				var x = document.getElementById("note29");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note30() {
+				var x = document.getElementById("note30");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note31() {
+				var x = document.getElementById("note31");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+	</body>
+</html>
+
+
+
+
+

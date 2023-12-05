@@ -307,9 +307,12 @@
                 var h = winndow.innerHeight;
                 var menuo = document.getElementById("menuopen");
                 var menuc = document.getElementById("menuclose");
-                if (w <= 450) {
+                if (w <= 500) {
                     menuo.onClick = 'menuopenmobile()';
                     menuc.onClick = 'menuclosemobile()';
+                } else {
+                    menuo.onClick = 'menuopen()';
+                    menuc.onClick = 'menuclose()';
                 }
             }
         </script>

@@ -194,8 +194,8 @@
 			}
 		</style>
 	</head>
-	<body oncopy="return false" oncut="return false" onpaste="return false">
-		<a class="tab" onClick="menuopen()">
+	<body oncopy="return false" oncut="return false" onpaste="return false" onLoad="mobilecheck()">
+		<a id="menuopen" class="tab" onClick="menuopen()">
             Capítulos
 		</a>
 		<div id="menu">
@@ -301,6 +301,55 @@
 				<b>Capítulo 1</b>
 			</a>
 		</span>
+        <script>
+            function mobilecheck() {
+                var w = window.innerWidth;
+                var h = winndow.innerHeight;
+                var menuo = document.getElementById("menuopen");
+                var menuc = document.getElementById("menuclose");
+                if (w <= 450) {
+                    menuo.onClick = 'menuopenmobile';
+                    menuc.onClick = 'menuclosemobile';
+                }
+            }
+        </script>
+        <script>
+		function menuopenmobile() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 0;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 80) {
+					clearInterval(id);
+				} else {
+					menu.style.display = 'block';
+					width++;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'block';
+				}
+			}
+		}
+		</script>
+		<script>
+		function menuclosemobile() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 80;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 0) {
+					clearInterval(id);
+					menu.style.display = 'none'
+				} else {
+					width--;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'none';
+					
+				}
+			}
+		}
+		</script>
 		<script>
 		function menuopen() {
 			var offclick = document.getElementById("offclick")

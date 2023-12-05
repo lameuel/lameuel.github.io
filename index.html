@@ -308,11 +308,11 @@
                 var menuo = document.getElementById("menuopen");
                 var menuc = document.getElementById("menuclose");
                 if (w <= 500) {
-                    menuo.onclick = 'menuopenmobile()';
-                    menuc.onclick = 'menuclosemobile()';
+                    menuo.setAttribute('onclick','menuopenmobile()';
+                    menuc.setAttribute('onclick','menuclosemobile()';
                 } else {
-                    menuo.onclick = 'menuopen()';
-                    menuc.onclick = 'menuclose()';
+                    menuo.setAttribute('onclick','menuopen()');
+                    menuc.setAttribute('onclick','menuclose()');
                 }
             }
         </script>

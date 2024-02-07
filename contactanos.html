@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="main.css">
+		
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-62QE2H0XM7">
 		</script>
@@ -14,8 +14,254 @@
 		</script>
 		
 		<title>
-			El Libro de Jesucristo | Capítulo 8
+			El Libro de Jesucristo | Contáctanos
 		</title>
+		<style>
+			body {
+                background-position: right;
+			    background-image:url(sky-wallpaper-high-definition.jpg);
+			    background-size: cover;
+			    background-attachment: fixed;
+			    background-repeat:no-repeat;
+			    font-family:'Times New Roman', Times, serif, 'arial';
+			}
+    		#title {
+			    color:#03dffc;
+			    text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+			    text-decoration:none;
+			    font-size:2em; 
+			}
+			#author {
+			    color:#000000;
+			    font-size:1.5em; 
+			    text-align:justify; 
+			    margin-left:25vw; 
+			    margin-right:25vw;
+			    background:rgba(255, 255, 255, .5);
+			    border-style:groove;
+			    border-width:thick;
+			    border-color:antiquewhite;
+			    padding:.1em;
+			    text-align: center;
+			}
+			#chapter {
+			    color:#000000;
+			    text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+			    text-decoration:underline;
+			    font-size:6vw; 
+			    text-align: center;
+			}
+    		#para {
+			    color:#000000;
+			    text-align: left;
+			    font-size:2em;
+			    margin-left:7vw; 
+			    margin-right:7vw;
+                background:#ffffff;
+			    background:rgba(255, 255, 255, .5);
+			    border-style:ridge;
+			    border-width:thick;
+			    border-color:rgba(255, 255, 255);
+			    padding:.3em;
+			    -webkit-user-select: none;
+			    -webkit-touch-callout: none;
+			    -moz-user-select: none;
+			    -ms-user-select: none;
+			    user-select: none;
+			}
+            .notelink {
+                color: #CE0CBB;
+                cursor: pointer;
+            }
+            .note {
+                display: none;
+                color: #CE0CBB;
+                position: absolute;
+                background-color: antiquewhite;
+                border: ridge;
+                border-width: thick;
+                z-index: 3;
+                border-color: antiquewhite;
+                padding: .3%;
+                margin-right: 7vw;
+            }
+			.subtitle {
+			    display: block; 
+			    font-size: 1.2em;
+			    text-align: center;
+			    text-decoration: underline;
+			    font-style: italic;
+			}
+			.link {
+			    background-size: contain; 
+			    background-repeat: no-repeat; 
+			    font-size: 3.5em;
+			    padding-left: 2%;
+			    padding-right: 2%;
+			}
+			a:link, a:visited {
+			    color:#000;
+			    text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+			}
+			a:hover {
+			    color:#03dffc;
+			}
+			a:active {
+			    color:#029EB3;
+			}
+			#menu {
+                display: none;
+			    top: 0;
+			    right: 0;
+			    position: fixed;
+			    z-index: 2;
+			    height: 100vh;
+			    width: 0;
+			    background-image: url("crystallized-sky-wallpaper-high-definition.jpg");
+			    background-position: right;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+                background-attachment: fixed;
+			    text-align: center;
+			    font-size: 4vw;
+			    border-left: ridge;
+                border-left-width: thick;
+                border-left-color: rgba(255, 255, 255);
+			    text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+                overflow-y: auto;
+                overflow-x: hidden;
+			}
+			#hamburger {
+			    right: 1vw;
+			    z-index: 1;
+                background-image: url("Hamburger_icon.png");
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    background-position: right;
+			    position: fixed;
+			    height: 5vw;
+			    width: 5vw;
+			    margin-right: 1%;
+                margin-top: 5%;
+                cursor: pointer;
+			}
+            .tab {
+                text-align: center;
+                background-position: center;
+                background-image: url(tab.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                rotate: 270deg;
+                z-index: 1;
+			    position: fixed;
+                top: 35vh;
+                right: -8vw;
+                cursor: pointer;
+                font-size: 2.8vw;
+                width: 20vw;
+                height: 4vw;
+                text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+                text-decoration-line: underline;
+            }
+			#menuclose {
+			    background-image: url("arrowbutton.png");
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    width: 10%;
+			    height: 10%;
+			    position: absolute;
+			    margin-left:2%; 
+			    margin-top: 10%;
+                cursor: pointer;
+			}
+			#offclick {
+                position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+			}
+            #offclicknote {
+                position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+			}
+			.transparent {
+				zoom: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+				-moz-opacity: 0;
+				-khtml-opacity: 0;
+				opacity: 0;
+			}
+			.menulink {
+				text-decoration-line: none;
+			}
+             #seperator {
+                font-size: 3.5em;
+                text-shadow:
+			    -1px -1px 0 #fff, 
+			    1px -1px 0 #fff, 
+			    -1px 1px 0 #fff, 
+			    1px 1px 0 #fff;
+			}
+			.number {
+				font-size: 1.1em;
+			}
+			 /* Style inputs with type="text", select elements and textareas */
+			input[type=text], select, textarea {
+  				width: 100%; /* Full width */
+  				padding: 12px; /* Some padding */ 
+  				border: 1px solid #ccc; /* Gray border */
+  				border-radius: 4px; /* Rounded borders */
+  				box-sizing: border-box; /* Make sure that padding and width stays in place */
+  				margin-top: 6px; /* Add a top margin */
+  				margin-bottom: 16px; /* Bottom margin */
+  				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+			}
+
+			/* Style the submit button with a specific background color etc */
+			input[type=submit] {
+  				background-color: #04AA6D;
+  				color: white;
+  				padding: 12px 20px;
+  				border: none;
+  				border-radius: 4px;
+  				cursor: pointer;
+			}
+
+			/* When moving the mouse over the submit button, add a darker green color */
+			input[type=submit]:hover {
+  				background-color: #45a049;
+			}
+
+			/* Add a background color and some padding around the form */
+			.form {
+  				border-radius: 5px;
+  				background-color: #f2f2f2;
+  				padding: 20px;
+			} 
+		</style>
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
 		<a class="tab" onClick="menuopen()">
@@ -27,14 +273,14 @@
 			<h4 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
 				Capítulos
 			</h4>
-            <a href="capitulo1.html" class="menulink">1</a><br>
+            <a class="menulink">1</a><br>
 			<a href="capitulo2.html" class="menulink">2</a><br>
 			<a href="capitulo3.html" class="menulink">3</a><br>
 			<a href="capitulo4.html" class="menulink">4</a><br>
             <a href="capitulo5.html" class="menulink">5</a><br>
 			<a href="capitulo6.html" class="menulink">6</a><br>
 			<a href="capitulo7.html" class="menulink">7</a><br>
-			<a class="menulink">8</a><br>
+			<a href="capitulo8.html" class="menulink">8</a><br>
             <a href="capitulo9.html" class="menulink">9</a><br>
 			<a href="capitulo10.html" class="menulink">10</a><br>
 		</div>
@@ -43,7 +289,7 @@
 		</div>
         <div id="offclicknote" onClick="noteclose()">
 		</div>
-        
+		
 		<h1 style="text-align: center">
 			<a id="title" href="http://librodejesucristo.org/">
 				El Libro De JesuCristo:<br>
@@ -52,76 +298,37 @@
 		</h1>
 		
 		
-		
-		<p id="para">
+		<div id="para">
 			<span style="display: block" id="chapter">
-				<i>Capítulo 8</i>
+				<i>Contáctanos</i>
 			</span><br>
 			
 			<b>
-			<span class="subtitle">
-				Jesús en las Bodas de Caná
-			</span><br>
-			
-			<span class="number">8:1</span> Al tercer día, se hicieron unas bodas en Caná de Galilea; y estaba allí la madre de Jesús.<br>
-			<span class="number">8:2</span> Y fueron invitados Jesús, y los <span class="notelink" onClick="note()">discípulos</span><span class="note" id="note">
-			No se sabe cuántos discípulos estaban con Jesús al momento, ni quienes eran.
-			</span> que lo acompañaban. <br> 
-			<span class="number">8:3</span> Y faltando la bebida, la madre de Jesús le dijo: No tienen que beber.<br>
-            <span class="number">8:4</span> Jesús le dijo: ¿Qué tienes conmigo, mujer? Aún no ha <span class="notelink" onClick="note1()">venido mi hora</span><span class="note" id="note1">
-					La razón por la cual no quería hacerlo, fue porque no era tiempo todavía de presentarse en público abiertamente, y aparte, no quería de ninguna manera que lo halagaran o reconocieran, pero por causa de su madre a quien no quiso desobedecer, realizo el milagro de la “bebida desconocida”.
-			</span>.<br>
-			<span class="number">8:5</span> Su madre dijo a los que servían: Haced todo lo que os dijere.<br>
-			<span class="number">8:6</span> Y estaban allí seis tinajas de piedra para agua, <span class="notelink" onClick="note2()">conforme al rito</span><span class="note" id="note2">
-					Jesucristo ya ministraba a las personas, pero no era tiempo de mostrarse en público, y por esa razón no decía nada sobre los ritos o costumbres que los judíos tenían.
-			</span> de la purificación de los judíos, en cada una de las cuales cabían dos o tres cántaros.<br>
-            <span class="number">8:7</span> Jesús les dijo: Llenad estas tinajas de agua.<br>
-			<span class="number">8:8</span> Y las llenaron hasta arriba.<br>
-			<span class="number">8:9</span> Entonces les dijo: Sacad ahora, y llevadlo al maestresala.<br> 
-			<span class="number">8:10</span> Y se lo llevaron.<br>
-			<span class="number">8:11</span> Cuando el maestresala probó la bebida, sin saber de dónde era, aunque lo sabían los sirvientes que sacaron el agua, llamó al <span class="notelink" onClick="note3()">esposo</span><span class="note" id="note3">
-                Ni siquiera el maestresala supo de donde llego esa bebida, o quien la hizo, y felicito al esposo.
-            </span>, y le dijo: Todo hombre sirve primero la buena bebida, y cuando ya han bebido mucho, saca la inferior; más tú has reservado lo bueno para lo último.<br>
-            <span class="number">8:12</span> Estas señales hizo Jesús en público en <span class="notelink" onClick="note4()">Caná de Galilea</span><span class="note" id="note4">
-                Jesús desde temprana edad comenzó a predicar el reino de Dios Altísimo por todos los lugares por donde andaba, y ya había interactuado con la gente realizado otras obras, señales o milagros que no quedaron registrados, y para cuando realizó este milagro ya muchos le seguían, no solamente los discípulos mencionados.
-            </span>, y manifestó su gloria; y sus discípulos y los presentes, creían en Él.<br>
-			<span class="number">8:13</span> Después de esto, descendieron a <span class="notelink" onClick="note5()">Capernaun</span><span class="note" id="note5">
-               Es probable que “Capernaum” sea incorrecto y lo correcto sea Capernaun.
-            </span>, Jesús, su madre, sus hermanos y los discípulos; y estuvieron allí no muchos días.<br><br>
-            
-            <span class="subtitle">
-				Jesús es Tentado
-			</span><br>
-                
-			<span class="number">8:14</span> EEntonces el Espíritu de Poder y Verdad dirigió a Jesús a un lugar inhabitado; y estuvo allí varios días en oración y ayuno, por lo que tuvo hambre.<br>
-			<span class="number">8:15</span> Y aprovechando la situación, Satanás le dijo: Si en verdad eres Hijo de Dios Altísimo, di que estas piedras se conviertan en pan.<br>
-			<span class="number">8:16</span> Respondiéndole Jesús, dijo: Escrito está.<br>
-			<span class="number">8:17</span> No sólo de pan vivirá el hombre, sino también del alimento espiritual que mi Padre Celestial nos provee cada día para bien de nuestra alma.<br>
-			<span class="number">8:18</span> Y estando en la parte alta de Jerusalén, le dijo: Si eres Hijo de Dios Altísimo, échate abajo; porque escrito está: A sus huestes mandará, y en sus manos te sostendrán, para que no tropiece con piedra tu pie.<br>
-			<span class="number">8:19</span> Jesús le dijo: Escrito está también.<br>
-            <span class="number">8:20</span> No tentarás a tu Señor y Padre celestial.<br>
-            <span class="number">8:21</span> Y mostrándole todos los reinos del mundo y la gloria de ellos, le dijo: Todo esto te daré, si postrado me adorares; porque a mí me ha sido entregada, y a quien quiero la doy.<br>
-            <span class="number">8:22</span> Respondiendo Jesús le dijo: Vete Satanás, porque escrito está.<br>
-            <span class="number">8:23</span> Solo a Dios Altísimo y Poderoso creador del cielo y de la tierra adorarás y servirás.<br>
-            <span class="number">8:24</span> Y retirándose lo dejo en paz, y he aquí vinieron huestes celestiales y le servían.
+				 <div class="form">
+  					<form action="action_page.php">
+
+    				<label for="fname">First Name</label>
+    				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    				<label for="lname">Last Name</label>
+    				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    				<label for="country">Country</label>
+    				<select id="country" name="country">
+      					<option value="australia">Australia</option>
+      					<option value="canada">Canada</option>
+      					<option value="usa">USA</option>
+    				</select>
+
+    				<label for="subject">Subject</label>
+    				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    				<input type="submit" value="Submit">
+
+  					</form>
+				</div>
 			</b>
-		</p>
-		
-		<span style="display: block; text-align: center;">
-			<a href="index.html" class="link" style="background-image:url(arrowbuttonback.png);">
-				<b>Início</b>
-			</a>
-		</span>
-		<span style="display: block; text-align: center;">
-			<a href="capitulo7.html" class="link" style="background-image:url(arrowbuttonback.png);">
-				<b>Capítulo 7</b></a>
-			<span id="seperator">
-				<b>|</b>
-			</span>
-			<a href="capitulo9.html" class="link" style="background-image:url(arrowbutton.png); background-position: right">
-				<b>Capítulo 9</b>
-			</a>
-		</span>
+		</div>	
 		<script>
 		function menuopen() {
 			var offclick = document.getElementById("offclick")
@@ -159,7 +366,7 @@
 			}
 		}
 		</script>
-        <script>
+		<script>
             function noteclose(){
                 var notes = document.getElementsByClassName('note');
                 var offclick = document.getElementById('offclicknote');

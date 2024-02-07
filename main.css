@@ -7,6 +7,7 @@ body {
 	font-family:'Times New Roman', Times, serif, 'arial';
 }
 #title {
+	z-index: 4;
 	color:#03dffc;
 	text-shadow:
 	-1px -1px 0 #fff, 
@@ -176,7 +177,7 @@ a:active {
     cursor: pointer;
 }
 #offclick {
-	z-index: 1
+	z-index: 1;
 	position: fixed;
 	display: none;
 	width: 100vw;

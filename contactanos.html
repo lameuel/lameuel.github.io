@@ -239,6 +239,16 @@
   				margin-bottom: 16px; /* Bottom margin */
   				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 			}
+			input[type=email], select, textarea {
+  				width: 100%; /* Full width */
+  				padding: 12px; /* Some padding */ 
+  				border: 1px solid #ccc; /* Gray border */
+  				border-radius: 4px; /* Rounded borders */
+  				box-sizing: border-box; /* Make sure that padding and width stays in place */
+  				margin-top: 6px; /* Add a top margin */
+  				margin-bottom: 16px; /* Bottom margin */
+  				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+			}
 
 			/* Style the submit button with a specific background color etc */
 			input[type=submit] {
@@ -310,24 +320,24 @@
   					<form action="https://formsubmit.co/b54b0272ea4ef4c5a902c3e988e85845" method="POST">
 					<input type="hidden" name="_captcha" value="false">
 					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-					<input type="hidden" name="subject" value="Mensaje!">
-					<input type="hidden" name="from_name" value="El Libro De JesuCristo">
+					<input type="hidden" name="_subject" value="Mensaje!">
+					<input type="hidden" name="_from" value="El Libro De JesuCristo">
 					<input type="hidden" name="_next" value="https://librodejesucristo.org">
 
     				<label for="fname">Nombre</label>
-    				<input type="text" id="fname" name="firstname" placeholder="">
+    				<input type="text" id="fname" name="First Name" placeholder="">
 
     				<label for="lname">Apellido</label>
-    				<input type="text" id="lname" name="lastname" placeholder="">
+    				<input type="text" id="lname" name="Last Name" placeholder="">
 					
 					<label for="email">Correo Electrónico</label>
-					<input type="text" id="email" name="email" placeholder="">
+					<input type="email" name="email" placeholder="">
 
     				<label for="country">País</label>
-    				<input type="text" id="country" name="country">
+    				<input type="text" id="country" name="Country">
 
     				<label for="subject">Mensaje</label>
-    				<textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
+    				<textarea id="message" name="_message" placeholder="" style="height:200px"></textarea>
 
     				<input type="submit" value="Submit">
 

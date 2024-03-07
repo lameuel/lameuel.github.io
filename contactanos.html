@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<link rel="stylesheet" href="main.css">
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-62QE2H0XM7">
 		</script>
@@ -17,267 +17,72 @@
 			El Libro de Jesucristo | Contáctanos
 		</title>
 		<style>
-			body {
-                background-position: right;
-			    background-image:url(sky-wallpaper-high-definition.jpg);
-			    background-size: cover;
-			    background-attachment: fixed;
-			    background-repeat:no-repeat;
-			    font-family:'Times New Roman', Times, serif, 'arial';
-			}
-    		#title {
-			    color:#03dffc;
-			    text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-			    text-decoration:none;
-			    font-size:2em; 
-			}
-			#author {
-			    color:#000000;
-			    font-size:1.5em; 
-			    text-align:justify; 
-			    margin-left:25vw; 
-			    margin-right:25vw;
-			    background:rgba(255, 255, 255, .5);
-			    border-style:groove;
-			    border-width:thick;
-			    border-color:antiquewhite;
-			    padding:.1em;
-			    text-align: center;
-			}
-			#chapter {
-			    color:#000000;
-			    text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-			    text-decoration:underline;
-			    font-size:6vw; 
-			    text-align: center;
-			}
-    		#para {
-			    color:#000000;
-			    text-align: left;
-			    font-size:2em;
-			    margin-left:7vw; 
-			    margin-right:7vw;
-                background:#ffffff;
-			    background:rgba(255, 255, 255, .5);
-			    border-style:ridge;
-			    border-width:thick;
-			    border-color:rgba(255, 255, 255);
-			    padding:.3em;
-			    -webkit-user-select: none;
-			    -webkit-touch-callout: none;
-			    -moz-user-select: none;
-			    -ms-user-select: none;
-			    user-select: none;
-			}
-            .notelink {
-                color: #CE0CBB;
-                cursor: pointer;
-            }
-            .note {
-                display: none;
-                color: #CE0CBB;
-                position: absolute;
-                background-color: antiquewhite;
-                border: ridge;
-                border-width: thick;
-                z-index: 3;
-                border-color: antiquewhite;
-                padding: .3%;
-                margin-right: 7vw;
-            }
-			.subtitle {
-			    display: block; 
-			    font-size: 1.2em;
-			    text-align: center;
-			    text-decoration: underline;
-			    font-style: italic;
-			}
-			.link {
-			    background-size: contain; 
-			    background-repeat: no-repeat; 
-			    font-size: 3.5em;
-			    padding-left: 2%;
-			    padding-right: 2%;
-			}
-			a:link, a:visited {
-			    color:#000;
-			    text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-			}
-			a:hover {
-			    color:#03dffc;
-			}
-			a:active {
-			    color:#029EB3;
-			}
-			#menu {
-                display: none;
-			    top: 0;
-			    right: 0;
-			    position: fixed;
-			    z-index: 2;
-			    height: 100vh;
-			    width: 0;
-			    background-image: url("crystallized-sky-wallpaper-high-definition.jpg");
-			    background-position: right;
-			    background-repeat: no-repeat;
-			    background-size: cover;
-                background-attachment: fixed;
-			    text-align: center;
-			    font-size: 4vw;
-			    border-left: ridge;
-                border-left-width: thick;
-                border-left-color: rgba(255, 255, 255);
-			    text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-                overflow-y: auto;
-                overflow-x: hidden;
-			}
-			#hamburger {
-			    right: 1vw;
-			    z-index: 1;
-                background-image: url("Hamburger_icon.png");
-			    background-repeat: no-repeat;
-			    background-size: contain;
-			    background-position: right;
-			    position: fixed;
-			    height: 5vw;
-			    width: 5vw;
-			    margin-right: 1%;
-                margin-top: 5%;
-                cursor: pointer;
-			}
-            .tab {
-                text-align: center;
-                background-position: center;
-                background-image: url(tab.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                rotate: 270deg;
-                z-index: 1;
-			    position: fixed;
-                top: 35vh;
-                right: -8vw;
-                cursor: pointer;
-                font-size: 2.8vw;
-                width: 20vw;
-                height: 4vw;
-                text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-                text-decoration-line: underline;
-            }
-			#menuclose {
-			    background-image: url("arrowbutton.png");
-			    background-size: contain;
-			    background-repeat: no-repeat;
-			    width: 10%;
-			    height: 10%;
-			    position: absolute;
-			    margin-left:2%; 
-			    margin-top: 10%;
-                cursor: pointer;
-			}
-			#offclick {
-                position: fixed;
-				display: none;
-				width: 100vw;
-				height: 100vh;
-			}
-            #offclicknote {
-                position: fixed;
-				display: none;
-				width: 100vw;
-				height: 100vh;
-			}
-			.transparent {
-				zoom: 1;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-				filter: alpha(opacity=0);
-				-moz-opacity: 0;
-				-khtml-opacity: 0;
-				opacity: 0;
-			}
-			.menulink {
-				text-decoration-line: none;
-			}
-             #seperator {
-                font-size: 3.5em;
-                text-shadow:
-			    -1px -1px 0 #fff, 
-			    1px -1px 0 #fff, 
-			    -1px 1px 0 #fff, 
-			    1px 1px 0 #fff;
-			}
-			.number {
-				font-size: 1.1em;
-			}
 			 /* Style inputs with type="text", select elements and textareas */
 			input[type=text], select, textarea {
+				font-family: hynings handwriting;
+				font-size: 4vw;
+				height: 1.2em;
   				width: 100%; /* Full width */
   				padding: 12px; /* Some padding */ 
-  				border: 1px solid #ccc; /* Gray border */
-  				border-radius: 4px; /* Rounded borders */
+  				border: 1.5px inset #ccc; /* Gray border */
+  				border-radius: 30px; /* Rounded borders */
   				box-sizing: border-box; /* Make sure that padding and width stays in place */
-  				margin-top: 6px; /* Add a top margin */
-  				margin-bottom: 16px; /* Bottom margin */
+  				margin-top: 1vw; /* Add a top margin */
+  				margin-bottom: 1vw; /* Bottom margin */
   				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 			}
 			input[type=email], select, textarea {
+				font-size: 4vw;
+				height: 1.2em;
+				font-family: hynings handwriting;
   				width: 100%; /* Full width */
   				padding: 12px; /* Some padding */ 
-  				border: 1px solid #ccc; /* Gray border */
-  				border-radius: 4px; /* Rounded borders */
+  				border: 1.5px inset #ccc; /* Gray border */
+  				border-radius: 30px; /* Rounded borders */
   				box-sizing: border-box; /* Make sure that padding and width stays in place */
-  				margin-top: 6px; /* Add a top margin */
-  				margin-bottom: 16px; /* Bottom margin */
+  				margin-top: 1vw; /* Add a top margin */
+  				margin-bottom: 1vw; /* Bottom margin */
   				resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 			}
 
 			/* Style the submit button with a specific background color etc */
 			input[type=submit] {
-  				background-color: #04AA6D;
-  				color: white;
-  				padding: 12px 20px;
-  				border: none;
-  				border-radius: 4px;
+				background-image: linear-gradient(140deg, rgba(3,223,252, .5)10%, rgba(3,223,252,.5), rgba(3,223,252,0));
+  				color: black;
+				font: inherit;
+				font-size: 3.5vw;
+				width: 15vw;
+				height: 5vw;
+				margin: auto;
+  				border: 3px outset;
+  				border-radius: 15px;
   				cursor: pointer;
 			}
 
 			/* When moving the mouse over the submit button, add a darker green color */
 			input[type=submit]:hover {
-  				background-color: #45a049;
+  				background-color: #45a04;
 			}
 
 			/* Add a background color and some padding around the form */
 			.form {
 				margin: auto;
 				width: 70vw;
-  				border-radius: 5px;
-  				background-color: #f2f2f2;
+  				border-radius: 10px;
+  				background-image: linear-gradient(130deg, rgba(3,223,252, .5)50%, rgba(3,223,252), rgba(3,223,252,0)65%);
   				padding: 1vw;
-			} 
+			}
+			#message {
+				font-size: 3vw
+			}
+			label {
+				font-size: 2.5vw;
+			}
 		</style>
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
 		<a class="tab" onClick="menuopen()">
-            Capítulos
+           Menú 
 		</a>
 		<div id="menu" style="display: none">
 			<div id="menuclose" onClick="menuclose()">
@@ -285,7 +90,7 @@
 			<h4 style="text-decoration-line: underline; margin-top:8%; margin-bottom: 0; text-decoration: underline,">
 				Capítulos
 			</h4>
-            <a class="menulink">1</a><br>
+            <a href="capitulo1.html" class="menulink">1</a><br>
 			<a href="capitulo2.html" class="menulink">2</a><br>
 			<a href="capitulo3.html" class="menulink">3</a><br>
 			<a href="capitulo4.html" class="menulink">4</a><br>
@@ -294,7 +99,8 @@
 			<a href="capitulo7.html" class="menulink">7</a><br>
 			<a href="capitulo8.html" class="menulink">8</a><br>
             <a href="capitulo9.html" class="menulink">9</a><br>
-			<a href="capitulo10.html" class="menulink">10</a><br>
+			<a href="capitulo10.html" class="menulink">10</a><br><br>
+			<a class="contactanos">Contáctanos</a>
 		</div>
 		
 		<div id="offclick" onClick="menuclose()">
@@ -313,7 +119,7 @@
 		<div id="para">
 			<span style="display: block" id="chapter">
 				<i>Contáctanos</i>
-			</span><br>
+			</span>
 			
 			<b>
 				 <div class="form">
@@ -325,21 +131,21 @@
 					<input type="hidden" name="_next" value="https://librodejesucristo.org">
 
     				<label for="fname">Nombre</label>
-    				<input type="text" id="fname" name="First Name" placeholder="">
+    				<input type="text" id="fname" name="Nombre" placeholder="">
 
     				<label for="lname">Apellido</label>
-    				<input type="text" id="lname" name="Last Name" placeholder="">
+    				<input type="text" id="lname" name="Apellido" placeholder="">
 					
 					<label for="email">Correo Electrónico</label>
 					<input type="email" name="email" placeholder="">
 
     				<label for="country">País</label>
-    				<input type="text" id="country" name="Country">
+    				<input type="text" id="country" name="País">
 
     				<label for="subject">Mensaje</label>
-    				<textarea id="message" name="_message" placeholder="" style="height:200px"></textarea>
+    				<textarea id="message" name="Mensaje" placeholder="" style="height:200px"></textarea>
 
-    				<input type="submit" value="Submit">
+    				<input type="submit" value="Enviar" style="display: block;">
 
   					</form>
 				</div>

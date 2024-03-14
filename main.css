@@ -116,6 +116,7 @@ text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 overflow-y: auto;
 overflow-x: hidden;
 }
+
 #hamburger {
 right: 1vw;
 z-index: 1;

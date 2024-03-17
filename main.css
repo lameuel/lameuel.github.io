@@ -96,7 +96,7 @@ color:#03dffc;
 a:active {
 color:#029EB3;
 }
-a.notelink:link {
+a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
 	color: #CE0CBB;
 	text-shadow: none;
 }

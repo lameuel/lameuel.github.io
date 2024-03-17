@@ -100,6 +100,10 @@ a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
 	color: #CE0CBB;
 	text-shadow: none;
 }
+.currentpage {
+	color: #03dffc;
+	text-decoration-line: none;
+}
 #menu {
 display: none;
 top: 0;

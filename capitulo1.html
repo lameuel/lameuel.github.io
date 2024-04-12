@@ -74,7 +74,7 @@
 				<span class="number">1:6</span> Algunos de los nombres de los que vivimos estas experiencias, como de aquellos que las escribimos, se mencionarán conforme se desarrolla la historia.<br><br>
 				
 				<span class="subtitle">
-					Jesucristo es El Mismo Ayer, Hoy, y Por Los Siglos
+					Jesucristo es El Mismo Ayer, Hoy, y Por los Siglos
 				</span><br>
 				
 				<span class="number">1:7</span> En el <span class="notelink" onClick="note()">principio</span>
@@ -98,7 +98,15 @@
 					para evitar confusiones.
 				</span> 
 				Altísimo.<br>
-				<span class="number">1:8</span> Todas las cosas por ellos fueron hechas, y sin ellos, nada de lo que ha sido hecho, fue hecho.<br>
+				<span class="number">1:8</span> Todas las cosas por <span class="notelink" OnClick="note0()">ellos</span>
+				<span class="note" id="note0">
+				La referencia de que en el reino de los cielos son muchos los habitantes, y de que viven en otra dimensión o galaxia, se encuentra en Génesis 1:26
+				Donde Dios Altísimo dice; “hagamos, a nuestra” hablando en plural. 
+				Indicando que se dirigía a alguien más.<br>
+
+				Génesis 18:2 nos lo confirma, al decir;
+				“Tres varones”.
+				</span>fueron hechas, y sin ellos, nada de lo que ha sido hecho, fue hecho.<br>
 				<span class="number">1:9</span> En ellos está la vida, y la vida es <span class="notelink" onClick="note2()">la luz</span>
 				<span class="note" id="note2">
 					En Ellos está la vida y la luz, por lo tanto, 
@@ -276,6 +284,19 @@
                 }
             }
         </script>
+		<script>
+			function note0() {
+				var x = document.getElementById("note0");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
 		<script>
 			function note() {
 				var x = document.getElementById("note");

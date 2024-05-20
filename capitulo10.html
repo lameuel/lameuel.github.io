@@ -278,6 +278,19 @@
 				}
 			} 
 		</script>
+		<script>
+			function note0() {
+				var x = document.getElementById("note0");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
         <script>
 			function note1() {
 				var x = document.getElementById("note1");

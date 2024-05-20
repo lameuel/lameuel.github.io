@@ -205,7 +205,9 @@
 			<span class="note" id="note22">
                 Había pastores en la región en esos precisos momentos, que como ya oscurecía, cuidaban los rebaños.
 				Y tuvieron la maravillosa experiencia de presenciarlo todo, quedando como testigos presenciales para siempre.
-            </span> de la noche sobre su rebaño: Y he aquí, se les presentó <span class="notelink" onClick="note30()">un Ser enviado del cielo</span><span class="note" id="note30">
+            </span> de <span class="notelink" onClick="note31()">la noche</span><span class="note" id="note31">
+				Cuando Jesús nació, fue cuando la estrella apareció marcando ese acontecimiento tan relevante, y como empezaba a obscurecer, se pudo distinguir la estrella en todo su esplendor.	
+			</span> sobre su rebaño: Y he aquí, se les presentó <span class="notelink" onClick="note30()">un Ser enviado del cielo</span><span class="note" id="note30">
 				A través del tiempo; Seres del cielo o de otras galaxias han visitado al ser humano, por lo que no debe de ser nada nuevo o extraño para nosotros los que vivimos por fe.
 			</span>, y su gloria los rodeó de resplandor; y tuvieron gran temor.<br>
 			<span class="number">5:22</span> Pero inmediatamente les dijo: No teman; porque he aquí os doy nuevas de gran gozo, que será para todo el mundo: pues ha nacido hoy, en la provincia de David, un Salvador, que es CRISTO, y su nombre significa: Ungido por Dios Altísimo.<br>
@@ -713,6 +715,19 @@
 		<script>
 			function note30() {
 				var x = document.getElementById("note30");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note31() {
+				var x = document.getElementById("note31");
 				var offclick = document.getElementById("offclicknote");
 				if (!x.style.display || x.style.display == "none") {
 					x.style.display = "block";

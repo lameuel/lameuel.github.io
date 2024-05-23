@@ -1,10 +1,10 @@
 @font-face { 
 	font-family: 'Hynings Handwriting'; 
-	src: url('HyningsHandwritingV2-Regular.ttf');
+	src: url('resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
 background-position: right;
-background-image:url(sky-wallpaper-high-definition.jpg);
+background-image:url(resources/sky-wallpaper-high-definition.jpg);
 background-size: cover;
 background-attachment: fixed;
 background-repeat:no-repeat;
@@ -85,7 +85,7 @@ position: fixed;
 z-index: 2;
 height: 100vh;
 width: 0;
-background-image: url("crystallized-sky-wallpaper-high-definition.jpg");
+background-image: url("resources/crystallized-sky-wallpaper-high-definition.jpg");
 background-position: right;
 background-repeat: no-repeat;
 background-size: cover;
@@ -113,7 +113,7 @@ text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 #tab {
 text-align: center;
 background-position: center;
-background-image: url(tab.png);
+background-image: url(resources/tab.png);
 background-repeat: no-repeat;
 background-size: contain;
 rotate: 270deg;
@@ -129,7 +129,7 @@ text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 text-decoration-line: underline;
 }
 #menuclose {
-background-image: url("arrowbutton.png");
+background-image: url("resources/arrowbutton.png");
 background-size: contain;
 background-repeat: no-repeat;
 width: 10%;

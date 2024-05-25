@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="gracias.css">
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-62QE2H0XM7">
+		</script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-62QE2H0XM7');
+		</script>
+		
+		<title>
+			El Libro de Jesucristo | ¡Gracias Por Contactarnos! 
+		</title>
+		<style>
+			
+		</style>
+	</head>
+	<body oncopy="return false" oncut="return false" onpaste="return false">
+		<a id="tab" onClick="menuopen()">
+           Menú 
+		</a>
+		<div id="menu">
+			<div id="menuclose" onClick="menuclose()">
+			</div>
+			<h4 style="text-decoration-line: underline; margin-top:7%; margin-bottom: 0; text-decoration: underline,">
+				Capítulos
+			</h4>
+			<div id="menulist">
+            	<a href="capitulo1.html" class="menulink">1</a><br>
+				<a href="capitulo2.html" class="menulink">2</a><br>
+				<a href="capitulo3.html" class="menulink">3</a><br>
+				<a href="capitulo4.html" class="menulink">4</a><br>
+            	<a href="capitulo5.html" class="menulink">5</a><br>
+				<a href="capitulo6.html" class="menulink">6</a><br>
+				<a href="capitulo7.html" class="menulink">7</a><br>
+				<a href="capitulo8.html" class="menulink">8</a><br>
+           	 	<a href="capitulo9.html" class="menulink">9</a><br>
+				<a href="capitulo10.html" class="menulink">10</a><br>
+				<a href="capitulo11.html" class="menulink">11</a><br>
+				<a href="capitulo12.html" class="menulink">12</a>
+			</div>
+			<a href="contactanos.html" id="contactanos">Contáctanos</a>
+		</div>
+		
+		<div id="offclick" onClick="menuclose()">
+		</div>
+        <div id="offclicknote" onClick="noteclose()">
+		</div>
+		
+		<h1 style="text-align: center">
+			<a id="title" href="http://librodejesucristo.org/">
+				El Libro De JesuCristo:<br>
+				El Nuevo Pacto
+			</a>
+		</h1>
+		
+		<div id="para">
+			<span style="display: block" id="gracias">
+				<i>¡Gracias Por Contactarnos!</i><br>
+				<span style="font-size: 4vw;">
+					Hemos recibido tu email.
+				</span><br>
+				<span style="font-size: 2.5vw;">
+					Para volver al inicio haga clic <a href="index.html" style="font-style: italic;">aquí</a>.
+				</span>
+			</span>
+			
+		</div>
+		<script>
+		function menuopen() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 0;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 30) {
+					clearInterval(id);
+				} else {
+					menu.style.display = 'block';
+					width++;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'block';
+				}
+			}
+		}
+		</script>
+		<script>
+		function menuclose() {
+			var offclick = document.getElementById("offclick")
+			var menu = document.getElementById("menu");
+			var width = 30;
+			id = setInterval(frame);
+			function frame() {
+				if (width == 0) {
+					clearInterval(id);
+					menu.style.display = 'none'
+				} else {
+					width--;
+					menu.style.width = width + 'vw';
+					offclick.style.display = 'none';
+					
+				}
+			}
+		}
+		</script>
+		<script>
+            function noteclose(){
+                var notes = document.getElementsByClassName('note');
+                var offclick = document.getElementById('offclicknote');
+                for(i = 0; i < notes.length; i++) {
+                    notes[i].style.display = 'none';
+                    offclick.style.display = 'none';
+                }
+            }
+        </script>
+		<script>
+			function note() {
+				var x = document.getElementById("note");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note1() {
+				var x = document.getElementById("note1");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note2() {
+				var x = document.getElementById("note2");
+                var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			}
+		</script>
+		<script>
+			function note3() {
+				var x = document.getElementById("note3");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note4() {
+				var x = document.getElementById("note4");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note5() {
+				var x = document.getElementById("note5");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note6() {
+				var x = document.getElementById("note6");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note7() {
+				var x = document.getElementById("note7");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note8() {
+				var x = document.getElementById("note8");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note9() {
+				var x = document.getElementById("note9");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note10() {
+				var x = document.getElementById("note10");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note11() {
+				var x = document.getElementById("note11");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note12() {
+				var x = document.getElementById("note12");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note13() {
+				var x = document.getElementById("note13");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note14() {
+				var x = document.getElementById("note14");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note15() {
+				var x = document.getElementById("note15");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note16() {
+				var x = document.getElementById("note16");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note17() {
+				var x = document.getElementById("note17");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+		<script>
+			function note18() {
+				var x = document.getElementById("note18");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note19() {
+				var x = document.getElementById("note19");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note20() {
+				var x = document.getElementById("note20");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note21() {
+				var x = document.getElementById("note21");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note22() {
+				var x = document.getElementById("note22");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+        <script>
+			function note23() {
+				var x = document.getElementById("note23");
+				var offclick = document.getElementById("offclicknote");
+				if (!x.style.display || x.style.display == "none") {
+					x.style.display = "block";
+                    offclick.style.display = "block";
+					} else {
+					x.style.display = "none";
+                    offclick.style.display = "none"
+				}
+			} 
+		</script>
+	</body>
+</html>
+
+
+
+
+

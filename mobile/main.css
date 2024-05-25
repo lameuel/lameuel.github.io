@@ -125,7 +125,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 text-align: center;
-font-size: 4vw;
+font-size: 4rem;
 border-left: ridge;
 border-left-width: thick;
 border-left-color: rgba(255, 255, 255);
@@ -214,6 +214,7 @@ font-size: 1.1em;
 	width: 100%;
 	text-align: center;
 	position: absolute;
-	font-size: 3vw;
+	font-size: 4rem;
 	text-decoration-line: none;
+	z-index: 3;
 }

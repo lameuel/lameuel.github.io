@@ -2,13 +2,9 @@
 <html>
 	<head>
 		<script>
-            function mobilecheck() {
-                var w = window.innerWidth;
-                var h = winndow.innerHeight;
-                if (h > w) {
-                    window.location.replace("www.librodejesucristo.org/mobile/index.html");
+                if (window.innerHeight < window.innerWidth) {
+                    window.location.replace("https://librodejesucristo.org/");
                 }
-            }
         </script>
         
 		<link rel="stylesheet" href="main.css">
@@ -28,7 +24,7 @@
 			El Libro De JesuCristo
 		</title>
 	</head>
-	<body onload="mobilecheck()" oncopy="return false" oncut="return false" onpaste="return false">
+	<body oncopy="return false" oncut="return false" onpaste="return false">
 		<a id="tab" onClick="menuopen()">
             Menú
 		</a>
@@ -71,7 +67,7 @@
         
         <p class="para">
 			<span style="display: block" id="chapter">
-				<i>Introducción Mobile</i>
+				<i>Introducción</i>
 			</span><br>
 			<b>
 				El libro de Jesucristo, es un ensayo de opinión, de los primeros cuatro libros del Nuevo Testamento que las Biblias de nuestros días nos presentan, y que también conocemos como; los evangelios, buenas nuevas o nuevo pacto.<br><br>
@@ -146,7 +142,7 @@
 			var width = 0;
 			id = setInterval(frame);
 			function frame() {
-				if (width == 30) {
+				if (width == 95) {
 					clearInterval(id);
 				} else {
 					menu.style.display = 'block';
@@ -161,7 +157,7 @@
 		function menuclose() {
 			var offclick = document.getElementById("offclick")
 			var menu = document.getElementById("menu");
-			var width = 30;
+			var width = 95;
 			id = setInterval(frame);
 			function frame() {
 				if (width == 0) {

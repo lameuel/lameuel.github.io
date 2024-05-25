@@ -4,9 +4,7 @@
 		<link rel="stylesheet" href="main.css">
 		
 		<script>
-                var w = window.innerWidth;
-                var h = winndow.innerHeight;
-                if (h > w) {
+                if (window.innerHeight > window.innerWidth) {
                     window.location.replace("https://librodejesucristo.org/mobile/index.html");
 				}
         </script>
@@ -25,7 +23,7 @@
 			El Libro De JesuCristo
 		</title>
 	</head>
-	<body onload="mobilecheck()" oncopy="return false" oncut="return false" onpaste="return false">
+	<body oncopy="return false" oncut="return false" onpaste="return false">
 		<a id="tab" onClick="menuopen()">
             Menú
 		</a>

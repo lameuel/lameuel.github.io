@@ -41,8 +41,8 @@ background:rgba(255, 255, 255, .5);
 	
 }
 #nuevopacto {
-	color:rgba(3,223,252,1.00);
-	text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	color:rgba(3,223,252);
+	text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	text-decoration:none;
 	font-size:2.5em;
 	text-align: center;

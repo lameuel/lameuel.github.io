@@ -59,6 +59,9 @@ body {
 .navlinks a:active {
   color: #029EB3;
 }
+.dropbtn {
+		pointer-events: none;
+	}
 .dropdown {
   display: inline-block;
 }

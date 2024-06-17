@@ -15,12 +15,14 @@
 <title> Libro de Jesucristo | Capítulo 10 </title>
 </head>
 <body oncopy="return false" oncut="return false" onpaste="return false">
+	 
+	<div id="offclicknote" onClick="noteclose()"></div>
+	
 <div id="shell">
   <h1 style="text-align: center"> <a id="title" href="http://librodejesucristo.org/"> Libro De JesuCristo </a> </h1>
  
 	<iframe src="resources/common_page_elements/navbar.html" onload="this.before(...(this.contentWindow.document.body||this.contentWindow.document).children);this.remove()"></iframe>
 		
-  <div id="offclicknote" onClick="noteclose()"></div>
   <div class="body">
     <p class="para"> <span style="display: block" id="chapter"> <i>Capítulo 10</i> </span><br>
       <b> <span class="subtitle"> Incredulidad de los Hermanos de Jesús </span><br>
@@ -92,44 +94,7 @@
   </div>
   <span style="display: block; text-align: center;"> <a href="index.html" class="link" style="background-image:url(resources/arrowbuttonback.png);"> <b>Início</b> </a> </span> <span style="display: block; text-align: center;"> <a href="capitulo9.html" class="link" style="background-image:url(resources/arrowbuttonback.png);"> <b>Capítulo 9</b></a> <span id="seperator"> <b>|</b> </span> <a href="capitulo11.html" class="link" style="background-image:url(resources/arrowbutton.png); background-position: right"> <b>Capítulo 11</b> </a> </span> <br>
 </div>
-<script>
-		function menuopen() {
-			var offclick = document.getElementById("offclick")
-			var menu = document.getElementById("menu");
-			var width = 0;
-			id = setInterval(frame);
-			function frame() {
-				if (width == 30) {
-					clearInterval(id);
-				} else {
-					menu.style.display = 'block';
-					width++;
-					menu.style.width = width + 'vw';
-					offclick.style.display = 'block';
-					noteclose();
-				}
-			}
-		}
-		</script> 
-<script>
-		function menuclose() {
-			var offclick = document.getElementById("offclick")
-			var menu = document.getElementById("menu");
-			var width = 30;
-			id = setInterval(frame);
-			function frame() {
-				if (width == 0) {
-					clearInterval(id);
-					menu.style.display = 'none'
-				} else {
-					width--;
-					menu.style.width = width + 'vw';
-					offclick.style.display = 'none';
-					
-				}
-			}
-		}
-		</script> 
+
 <script>
             function noteclose(){
                 var notes = document.getElementsByClassName('note');

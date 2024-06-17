@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="gracias.css">
+		<link rel="stylesheet" href="main.css">
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-62QE2H0XM7">
 		</script>
@@ -21,36 +21,7 @@
 		</style>
 	</head>
 	<body oncopy="return false" oncut="return false" onpaste="return false">
-		<a id="tab" onClick="menuopen()">
-           Menú 
-		</a>
-		<div id="menu">
-			<div id="menuclose" onClick="menuclose()">
-			</div>
-			<h4 style="text-decoration-line: underline; margin-top:7%; margin-bottom: 0; text-decoration: underline,">
-				Capítulos
-			</h4>
-			<div id="menulist">
-            	<a href="index.html" class="menulink">1</a><br>
-				<a href="capitulo2.html" class="menulink">2</a><br>
-				<a href="capitulo3.html" class="menulink">3</a><br>
-				<a href="capitulo4.html" class="menulink">4</a><br>
-            	<a href="capitulo5.html" class="menulink">5</a><br>
-				<a href="capitulo6.html" class="menulink">6</a><br>
-				<a href="capitulo7.html" class="menulink">7</a><br>
-				<a href="capitulo8.html" class="menulink">8</a><br>
-           	 	<a href="capitulo9.html" class="menulink">9</a><br>
-				<a href="capitulo10.html" class="menulink">10</a><br>
-				<a href="capitulo11.html" class="menulink">11</a><br>
-				<a href="capitulo12.html" class="menulink">12</a>
-			</div>
-			<a href="contactanos.html" id="contactanos">Contáctanos</a>
-		</div>
 		
-		<div id="offclick" onClick="menuclose()">
-		</div>
-        <div id="offclicknote" onClick="noteclose()">
-		</div>
 		
 		<h1 style="text-align: center">
 			<a id="title" href="http://librodejesucristo.org/">
@@ -58,14 +29,16 @@
 			</a>
 		</h1>
 		
-		<div id="para">
+		<iframe src="resources/common_page_elements/navbar.html" onload="this.before(...(this.contentWindow.document.body||this.contentWindow.document).children);this.remove()"></iframe>
+		
+		<div id="graciaspara">
 			<span style="display: block" id="gracias">
 				<i>¡Gracias Por Contactarnos!</i><br>
 				<span style="font-size: 4vw;">
 					Hemos recibido tu email.
 				</span><br>
 				<span style="font-size: 2.5vw;">
-					Para volver al inicio haga clic <a href="index.html" style="font-style: italic;">aquí</a>.
+					Para volver al inicio haga clic <a class="graciaslink" href="index.html" style="font-style: italic;">aquí</a>.
 				</span>
 			</span>
 			

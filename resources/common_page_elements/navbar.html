@@ -1,4 +1,85 @@
-<div id="navbar">
-	<a href="../../introduccion.html" target="_parent">Introducción</a><a href=""></a><a href="contactanos.html">Contáctanos</a>
+<!DOCTYPE html>
+<style>
+	#navbar {
+		display:inline-block;
+		border-bottom-width:medium;
+		border-bottom-style: ridge;
+		border-bottom-color:#FFFFFF;
+		height: auto;
+		background: rgba(255, 255, 255, .5);
+		font-family:inherit;
+	}
+	.navlinks a {
+		color:#000000;
+		font-size:1.7em;
+		text-align: center;
+		padding-left:.5em;
+		padding-right:.5em;
+		text-decoration: underline;
+		border-radius: 5%;
+		text-shadow:-1px -1px 0 #cccccc, 1px -1px 0 #cccccc, 1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
+	}
+	
+	.links {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.dropdown {
+		display:inline-block;
+	}
+	.dropdown .dropbtn {
+		text-align: center;
+		font-family: inherit;
+		margin: 0;
+	}
+	.dropdown-content {
+		margin:auto;
+		display:none;
+		position: absolute;
+		min-width: 7em;
+		background:#8ebfdb;
+		box-shadow: 0 0.5em 1em 0.2em rgba(0,0,0,0.5);
+		overflow-y: auto;
+		border:medium ridge rgba(255,255,255,1.00);
+		border-top:none;
+	}
+	.dropdown-content a {
+		text-align:center;
+		display:block;
+		font-size: 2em;
+	}
+	.dropdown:hover .dropdown-content {
+		display:block;
+	}
+</style>
+<body>
+<div style="text-align: center;">
+	<div id="navbar">
+		<div class="navlinks">
+			<a href="../../introduccion.html" target="_parent">Introducción</a>
+			<div class="dropdown">
+				<a class="dropbtn">Capítulos</a>
+				<div class="dropdown-content" target="_top">
+					<a href="../../index.html" target="_parent">1</a>
+					<a href="../../capitulo2.html" target="_parent">2</a>
+					<a href="../../capitulo3.html" target="_parent">3</a>
+					<a href="../../capitulo4.html" target="_parent">4</a>
+					<a href="../../capitulo5.html" target="_parent">5</a>
+					<a href="../../capitulo6.html" target="_parent">6</a>
+					<a href="../../capitulo7.html" target="_parent">7</a>
+					<a href="../../capitulo8.html" target="_parent">8</a>
+					<a href="../../capitulo9.html" target="_parent">9</a>
+					<a href="../../capitulo10.html" target="_parent">10</a>
+					<a href="../../capitulo11.html" target="_parent">11</a>
+					<a href="../../capitulo12.html" target="_parent">12</a>
+				</div>
+			</div>
+			<a style="display:none;" href="../../familia.html" target="_parent">La Gran Familia</a>
+			<a style="display:none;" href="../../definiciones.html" target="_parent">Definiciones</a>
+			<a style="display:none;" href="../../indice.html" target="_parent">Índice de comentarios</a>
+			<a href="../../contactanos.html" target="_parent">Contáctanos</a>
+		</div>
+	</div>
 </div>
-		
+</body>

@@ -33,7 +33,8 @@ body {
   border-bottom-style: ridge;
   border-bottom-color: #FFFFFF;
   height: auto;
-  background: rgba(255, 255, 255, .5);
+  background:url(resources/translucent_white50.png);
+	background-size:contain;
   font-family: inherit;
 	position:relative;
 	z-index:99;
@@ -71,11 +72,12 @@ body {
   margin: 0;
 }
 .dropdown-content {
-  margin: auto;
+  left:0;
+	right:0;
   display: none;
   position: absolute;
-  min-width: 7em;
-  background: #8ebfdb;
+ background:url(resources/translucent_white75.png);
+	background-size:contain;
   box-shadow: 0 0.5em 1em 0.2em rgba(0, 0, 0, 0.5);
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
@@ -84,19 +86,15 @@ body {
 }
 .dropdown-content a {
   text-align: center;
-  display: block;
   font-size: 2em;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.navbarghost {
-  border-style: dashed;
-  height: 1.5em;
-  position: relative;
-  top: 2.4em;
-}
+/*
 
+
+*/
 .notice {
   overflow-x: visible;
   width: auto;
@@ -115,8 +113,8 @@ body {
  margin-right:auto;
 	margin-left:auto;
   margin-top: .2em;
-  background: #ffffff;
-  background: rgba(255, 255, 255, .5);
+  background:url(resources/translucent_white50.png);
+	background-size:contain;
   padding: .3em;
   -webkit-user-select: none;
   -webkit-touch-callout: none;

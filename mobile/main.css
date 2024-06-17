@@ -1,10 +1,10 @@
 @font-face { 
 	font-family: 'Hynings Handwriting'; 
-	src: url('resources/HyningsHandwritingV2-Regular.ttf');
+	src: url('../resources/resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
 background-position: right;
-background-image:url(resources/sky-wallpaper-high-definition.jpg);
+background-image:url(../resources/sky-wallpaper-high-definition.jpg);
 background-size: cover;
 background-attachment: fixed;
 background-repeat:no-repeat;
@@ -28,16 +28,16 @@ font-size:2.7em;
 	border-color:rgba(255, 255, 255);
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif, 'arial';
-	background:#ffffff;
-	background:rgba(255, 255, 255, .5);
+	background-image:url("../resources/translucent_white50.png");
+background-size: cover;
 }
 #navbar {
 margin-right: 7vw;
 margin-left: 7vw;
 font-size: 2vw;
 text-align: center;
-background:#ffffff;
-background:rgba(255, 255, 255, .5);
+background-image:url("../resources/translucent_white50.png");
+background-size: cover;
 	
 }
 #nuevopacto {

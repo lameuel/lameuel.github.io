@@ -191,8 +191,6 @@ a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
   z-index: 5;
 }
 .link {
-  background-size: contain;
-  background-repeat: no-repeat;
   font-size: 3.5em;
   padding-left: 2%;
   padding-right: 2%;
@@ -206,6 +204,46 @@ a.link:hover {
   color: #03dffc;
 }
 a.link:active {
+  color: #029EB3;
+}
+.linkfwd {
+	background-image:url(../resources/arrowbutton.png);
+	background-position:right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.5em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+a.linkfwd:link, a:visited {
+  color: #000;
+  text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+a.linkfwd:hover {
+  color: #03dffc;
+}
+a.linkfwd:active {
+  color: #029EB3;
+}
+.linkback {
+	background-image:url(../resources/arrowbuttonback.png);
+	background-position:left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.5em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+a.linkback:link, a:visited {
+  color: #000;
+  text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+a.linkback:hover {
+  color: #03dffc;
+}
+a.linkback:active {
   color: #029EB3;
 }
 #seperator {

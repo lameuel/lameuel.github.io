@@ -91,7 +91,7 @@ body {
 }
 .dropdown-content a {
   text-align: center;
-  font-size: 3em;
+  font-size: 4.5em;
 }
 .dropdown:hover .dropdown-content {
   display: block;

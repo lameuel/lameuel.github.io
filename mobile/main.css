@@ -76,15 +76,16 @@ body {
   margin: 0;
 }
 .dropdown-content {
-	background-image: url("../resources/translucent_white75.png");
-	background-size:cover;
+	 background: url("../resources/sky-wallpaper-high-definition.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+  box-shadow: 0 1em 1em 1em rgba(0, 0, 0, 0.5);
 	left:0;
 	right:0;
   padding-top: 1em;
   display: none;
   position: relative;
   min-width: 5em;
-  box-shadow: 0 0.5em 1em 0.2em rgba(0, 0, 0, 0.5);
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
@@ -93,6 +94,8 @@ body {
 .dropdown-content a {
   text-align: center;
   font-size: 4.5em;
+	text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .dropdown:hover .dropdown-content {
   display: block;

@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 #title {
-  color: rgb(3, 223, 252);
+  color: #03dffc;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   text-decoration: none;
   font-size: 2.5em;
@@ -75,9 +75,10 @@ body {
   right: 0;
   display: none;
   position: relative;
-  background: url(resources/translucent_white75.png);
-  background-size: contain;
-  box-shadow: 0 0.5em 1em 0.2em rgba(0, 0, 0, 0.5);
+  background: url("resources/sky-wallpaper-high-definition.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+  box-shadow: 0 1em 1em 1em rgba(0, 0, 0, 0.5);
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
@@ -89,6 +90,8 @@ body {
 .dropdown-content a {
   text-align: center;
   font-size: 3.5em;
+	text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .dropdown:hover .dropdown-content {
   display: block;

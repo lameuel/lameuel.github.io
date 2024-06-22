@@ -48,6 +48,7 @@ body {
   text-decoration: underline;
   border-radius: 5%;
   text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, 1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
+	white-space:nowrap;
 }
 .navlinks a:link, a:visited {
   color: #000;

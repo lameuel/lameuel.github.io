@@ -63,7 +63,7 @@ body {
 }
 .dropdown {
   display: inline-block;
-  position: absolute;
+  position: relative;
 }
 .dropdown .dropbtn {
   text-align: center;
@@ -74,7 +74,7 @@ body {
   left: 0;
   right: 0;
   display: none;
-  position: relative;
+  position: absolute;
   background: url("resources/sky-wallpaper-high-definition.jpg");
   background-size: cover;
 	background-repeat: no-repeat;
@@ -83,9 +83,6 @@ body {
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
   z-index: 99;
-}
-.dropbtn-placeholder {
-	visibility:hidden;
 }
 .dropdown-content a {
   text-align: center;

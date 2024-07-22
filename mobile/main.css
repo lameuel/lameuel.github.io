@@ -68,7 +68,7 @@ body {
 }
 .dropdown {
   display: inline-block;
-	position:absolute;
+	position:relative;
 }
 .dropdown .dropbtn {
   text-align: center;
@@ -84,7 +84,7 @@ body {
 	right:0;
   padding-top: 1em;
   display: none;
-  position: relative;
+  position: absolute;
   min-width: 5em;
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
@@ -99,9 +99,6 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.dropbtn-placeholder {
-	visibility: hidden;
 }
 
 /*

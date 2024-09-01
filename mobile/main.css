@@ -7,14 +7,13 @@ body {
   background-image: url(../resources/sky-wallpaper-high-definition.jpg);
   background-size:cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   font-family: 'Times New Roman', Times, serif, 'arial';
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-	width: 100vw;
 }
 #shell {
   margin: 0;
@@ -257,7 +256,7 @@ a.linkback:active {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 /*Contact Page Styling*/
-.form {
+form {
   margin: auto;
   width: 100vw;
   border-radius: 10px;

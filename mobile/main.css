@@ -265,14 +265,14 @@ a.linkback:active {
   padding: 1vw;
 }
 #message {
-  font-size: 2.7em
+  font-size: 4em
 }
 label {
-  font-size: 4em;
+  font-size: 4.5em;
 }
 input[type=text], select, textarea {
   font-family: hynings handwriting;
-  font-size: 3em;
+  font-size: 4em;
   height: 1.2em;
   width: 100%;
   padding: 12px;
@@ -284,7 +284,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 input[type=email], select, textarea {
-  font-size: 3em;
+  font-size: 4em;
   height: 1.2em;
   font-family: hynings handwriting;
   width: 100%;

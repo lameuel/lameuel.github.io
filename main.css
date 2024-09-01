@@ -224,22 +224,11 @@ a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
   font-size: 1.1em;
 }
 /*Contact Page Styling*/
-#contactanos {
-  margin-top: .2em;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  width: 64vw;
-  position: relative;
-  text-decoration-line: none;
-  background: #ffffff;
-  background: rgba(255, 255, 255, .5);
-}
 .form {
   margin: auto;
   width: 60vw;
   border-radius: 10px;
-  background-image: linear-gradient(130deg, rgba(3, 223, 252, .5)50%, rgba(3, 223, 252), rgba(3, 223, 252, 0)65%);
+  background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)70%);
   padding: 1vw;
 }
 #message {

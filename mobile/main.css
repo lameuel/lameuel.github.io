@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Hynings Handwriting';
-  src: url('resources/HyningsHandwritingV2-Regular.ttf');
+  src: url('../resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
   background-position: right;
@@ -265,14 +265,14 @@ a.linkback:active {
   padding: 1vw;
 }
 #message {
-  font-size: 3vw
+  font-size: 2.7em
 }
 label {
-  font-size: 3vw;
+  font-size: 4em;
 }
 input[type=text], select, textarea {
   font-family: hynings handwriting;
-  font-size: 3vw;
+  font-size: 3em;
   height: 1.2em;
   width: 100%;
   padding: 12px;
@@ -284,7 +284,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 input[type=email], select, textarea {
-  font-size: 3vw;
+  font-size: 3em;
   height: 1.2em;
   font-family: hynings handwriting;
   width: 100%;
@@ -301,9 +301,9 @@ input[type=submit] {
   background-image: linear-gradient(140deg, rgba(3, 223, 252, .5)10%, rgba(3, 223, 252, .5), rgba(3, 223, 252, 0));
   color: black;
   font: inherit;
-  font-size: 3.5vw;
-  width: 15vw;
-  height: 5vw;
+  font-size: 4em;
+  width: auto;
+  height: auto;
   margin: auto;
   border: 3px outset;
   border-radius: 15px;

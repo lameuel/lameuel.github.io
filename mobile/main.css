@@ -3,9 +3,9 @@
   src: url('../resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
-  background-position: right;
+  background-position: top;
   background-image: url(../resources/sky-wallpaper-high-definition.jpg);
-  background-size: cover;
+  background-size:cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: 'Times New Roman', Times, serif, 'arial';
@@ -151,7 +151,7 @@ body {
   color: #000000;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   text-decoration: underline;
-  font-size: 4.7rem;
+  font-size: 15vw;
   text-align: center;
 	display:block;
 }

@@ -3,7 +3,7 @@
   src: url('../resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
-  background-position: 90%;
+  background-position: right;
   background-image: url(../resources/sky-wallpaper-high-definition.jpg);
   background-size:cover;
   background-attachment: fixed;
@@ -14,11 +14,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-	padding: 0px;
+	width: 100vw;
 }
 #shell {
   margin: 0;
-	padding: 0px;
   text-align: center;
   position: relative;
 }
@@ -33,7 +32,7 @@ body {
 }
 /*Navigation Bar Styling*/
 #navbar {
-  display: inline-block;
+  display: block;
   border-bottom-width: medium;
   border-bottom-style: ridge;
   border-bottom-color: #FFFFFF;

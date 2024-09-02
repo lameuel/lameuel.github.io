@@ -3,10 +3,11 @@
   src: url('../resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
- background-position: top left 90%;
+ background-position: bottom right;
   background-image: url(../resources/sky-wallpaper-high-definition.jpg);
-  background-size:cover;
-  background-attachment: fixed; 
+  background-size:240%;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
   font-family: 'Times New Roman', Times, serif, 'arial';
   -webkit-user-select: none;
   -webkit-touch-callout: none;

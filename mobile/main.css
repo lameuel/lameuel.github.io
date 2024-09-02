@@ -43,7 +43,7 @@ body {
   position: relative;
   z-index: 99;
 	font-size: 8vw;
-	width: 100vw;
+	width: 100%;
 }
 .navlinks a {
   color: #000000;

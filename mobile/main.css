@@ -18,7 +18,7 @@ body {
 }
 #shell {
   text-align: center;
-	width:100%;
+	width:100vw;
 }
 #title {
   color: rgb(3, 223, 252);
@@ -43,6 +43,7 @@ body {
   position: relative;
   z-index: 99;
 	font-size: 8vw;
+	width: 100vw;
 }
 .navlinks a {
   color: #000000;

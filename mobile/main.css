@@ -261,7 +261,7 @@ a.linkback:active {
 form {
   width: 100vw;
   border-radius: 10px;
-  background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)70%);
+  background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)60%);
   padding: 1vw;
 }
 #message {

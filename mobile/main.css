@@ -42,13 +42,14 @@ body {
   font-family: inherit;
   position: relative;
   z-index: 99;
+	font-size: 8vw;
 }
 .navlinks a {
   color: #000000;
-  font-size: 3.5em;
+  font-size: 8vw;
   text-align: center;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: .2em;
+  padding-right: .2em;
   text-decoration: underline;
   border-radius: 5%;
   text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, 1px 1px 0 #cccccc, 1px 1px 0 #cccccc;

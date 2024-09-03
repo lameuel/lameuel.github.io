@@ -1,50 +1,56 @@
 @font-face {
   font-family: 'Hynings Handwriting';
-  src: url('resources/HyningsHandwritingV2-Regular.ttf');
+  src: url('../resources/HyningsHandwritingV2-Regular.ttf');
 }
 body {
-  background-position: right;
-  background-image: url(resources/sky-wallpaper-high-definition.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+ background-position: top left 90%;
+  background-image: url(../resources/sky-wallpaper-high-definition.jpg);
+  background-size:cover;
+  background-attachment: fixed; 
   font-family: 'Times New Roman', Times, serif, 'arial';
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	margin:0;
+	padding:0;
 }
 #shell {
-  margin: 0;
-  padding-left: 3%;
-  padding-right: 3%;
   text-align: center;
-  position: relative;
+	width:100vw;
 }
 #title {
-  color: #03dffc;
+  color: rgb(3, 223, 252);
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   text-decoration: none;
-  font-size: 2.5em;
+  width:100vw;
   z-index: 100;
   margin: auto;
-  position: relative;
+  padding:0;
+	font-size:10vw;
 }
 /*Navigation Bar Styling*/
 #navbar {
-  display: inline-block;
+  display: block;
   border-bottom-width: medium;
   border-bottom-style: ridge;
   border-bottom-color: #FFFFFF;
   height: auto;
-  background: url(resources/translucent_white50.png);
-  background-size: contain;
+  background:url("../resources/translucent_white50.png");
+	background-size: cover;
   font-family: inherit;
   position: relative;
   z-index: 99;
+	font-size: 8vw;
+	width: 100%;
 }
 .navlinks a {
   color: #000000;
-  font-size: 2.5em;
+  font-size: 8vw;
   text-align: center;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: .2em;
+  padding-right: .2em;
   text-decoration: underline;
   border-radius: 5%;
   text-shadow: -1px -1px 0 #cccccc, 1px -1px 0 #cccccc, 1px 1px 0 #cccccc, 1px 1px 0 #cccccc;
@@ -63,7 +69,7 @@ body {
 }
 .dropdown {
   display: inline-block;
-  position: relative;
+	position:relative;
 }
 .dropdown .dropbtn {
   text-align: center;
@@ -71,14 +77,16 @@ body {
   margin: 0;
 }
 .dropdown-content {
-  left: 0;
-  right: 0;
-  display: none;
-  position: absolute;
-  background: url("resources/sky-wallpaper-high-definition.jpg");
+	 background: url("../resources/sky-wallpaper-high-definition.jpg");
   background-size: cover;
 	background-repeat: no-repeat;
   box-shadow: 0 1em 1em 1em rgba(0, 0, 0, 0.5);
+	left:0;
+	right:0;
+  padding-top: 1em;
+  display: none;
+  position: absolute;
+  min-width: 5em;
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
@@ -86,13 +94,14 @@ body {
 }
 .dropdown-content a {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 4.5em;
 	text-shadow:
     -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 /*
 
 
@@ -105,8 +114,8 @@ body {
   border-style: ridge;
   border-color: #FFFFFF;
   text-align: center;
-  background: #ffffff;
-  background: rgba(255, 255, 255, .5);
+ background-image: url("../resources/translucent_white50.png");
+	background-size:cover; 
 }
 .body {
   color: #000000;
@@ -115,15 +124,15 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: .2em;
-  background: url(resources/translucent_white50.png);
-  background-size: contain;
+ background-image: url("../resources/translucent_white50.png");
+	background-size:cover; 
   padding: .3em;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   max-width: 2000px;
+}
+.para {
+  color: #000000;
+  text-align: left;
+  font-size: 1.2em;
 }
 #nuevopacto {
   color: rgba(3, 223, 252);
@@ -143,19 +152,20 @@ body {
   color: #000000;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   text-decoration: underline;
-  font-size: 4.7rem;
+  font-size: 15vw;
   text-align: center;
-	display: block;
+	display:block;
+	margin-top: 3rem;
 }
-.para {
-  color: #000000;
-  text-align: left;
+.subtitle {
+  display: block;
   font-size: 1.2em;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+.number {
+  font-size: 1.1em;
 }
 .notelink {
   color: #CE0CBB;
@@ -177,16 +187,18 @@ body {
   margin-right: 7vw;
   max-width: 2000px;
 }
-.subtitle {
-  display: block;
-  font-size: 1.2em;
-  text-align: center;
-  text-decoration: underline;
-  font-style: italic;
+a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
+  color: #CE0CBB;
+  text-shadow: none;
+}
+#offclicknote {
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
 }
 .link {
-  background-size: contain;
-  background-repeat: no-repeat;
   font-size: 3.5em;
   padding-left: 2%;
   padding-right: 2%;
@@ -202,44 +214,66 @@ a.link:hover {
 a.link:active {
   color: #029EB3;
 }
-a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
-  color: #CE0CBB;
-  text-shadow: none;
+.linkfwd {
+	background-image:url(../resources/arrowbutton.png);
+	background-position:right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.5em;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-#offclicknote {
-  position: fixed;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  z-index: 5;
+a.linkfwd:link, a:visited {
+  color: #000;
+  text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
-.menulink {
-  text-decoration-line: none;
+a.linkfwd:hover {
+  color: #03dffc;
+}
+a.linkfwd:active {
+  color: #029EB3;
+}
+.linkback {
+	background-image:url(../resources/arrowbuttonback.png);
+	background-position:left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.5em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+a.linkback:link, a:visited {
+  color: #000;
+  text-shadow:
+    -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+a.linkback:hover {
+  color: #03dffc;
+}
+a.linkback:active {
+  color: #029EB3;
 }
 #seperator {
   font-size: 3.5em;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
-.number {
-  font-size: 1.1em;
-}
 /*Contact Page Styling*/
-.form {
-  margin: auto;
-  width: 60vw;
+form {
+  width: 100vw;
   border-radius: 10px;
   background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)70%);
   padding: 1vw;
 }
 #message {
-  font-size: 3vw
+  font-size: 12vw
 }
 label {
-  font-size: 2.5vw;
+  font-size: 10vw;
 }
 input[type=text], select, textarea {
   font-family: hynings handwriting;
-  font-size: 3vw;
+  font-size: 12vw;
   height: 1.2em;
   width: 100%;
   padding: 12px;
@@ -251,7 +285,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 input[type=email], select, textarea {
-  font-size: 3vw;
+  font-size: 12vw;
   height: 1.2em;
   font-family: hynings handwriting;
   width: 100%;
@@ -268,9 +302,9 @@ input[type=submit] {
   background-image: linear-gradient(140deg, rgba(3, 223, 252, .5)10%, rgba(3, 223, 252, .5), rgba(3, 223, 252, 0));
   color: black;
   font: inherit;
-  font-size: 3.5vw;
-  width: 15vw;
-  height: 5vw;
+  font-size: 12vw;
+  width: auto;
+  height: auto;
   margin: auto;
   border: 3px outset;
   border-radius: 15px;

@@ -19,6 +19,10 @@ body {
 #shell {
   text-align: center;
 	width:100vw;
+	padding:0;
+	position: static;
+	
+	margin:0;
 }
 #title {
   color: rgb(3, 223, 252);
@@ -81,20 +85,25 @@ body {
   background-size: cover;
 	background-repeat: no-repeat;
   box-shadow: 0 1em 1em 1em rgba(0, 0, 0, 0.5);
-	left:0;
-	right:0;
-  padding-top: 1em;
+  padding-top: .3em;
   display: none;
   position: absolute;
-  min-width: 5em;
+  width:auto;
+	height:70vh;
+	overflow-x: hidden;
   overflow-y: auto;
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
   z-index: 99;
+	scrollbar-width: none;
+	 -ms-overflow-style: none;
+}
+.dropdown-content::-webkit-scrollbar {
+	display:none;
 }
 .dropdown-content a {
   text-align: center;
-  font-size: 4.5em;
+  font-size: 25vw;
 	text-shadow:
     -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
@@ -121,13 +130,12 @@ body {
   color: #000000;
   text-align: center;
   font-size: 2em;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0;
+  margin-left: 0;
   margin-top: .2em;
  background-image: url("../resources/translucent_white50.png");
 	background-size:cover; 
-  padding: .3em;
-  max-width: 2000px;
+  padding:0;
 }
 .para {
   color: #000000;
@@ -262,7 +270,7 @@ a.linkback:active {
 form {
   width: 100vw;
   border-radius: 10px;
-  background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)60%);
+  background-image: linear-gradient(55deg, rgba(3, 223, 252, .8)40%, rgba(3, 223, 252, 0)70%);
   padding: 1vw;
 }
 #message {

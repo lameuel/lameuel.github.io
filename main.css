@@ -223,6 +223,18 @@ a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
 .number {
   font-size: 1.1em;
 }
+/*Index Page Styling*/
+.indexentry {
+				font-size:1.1em;
+				color:#000;
+				text-decoration-line: none;
+	
+			}
+			.column1, .column2 {
+				text-align: left;
+				display:inline-block;
+				width:40%;
+			}
 /*Contact Page Styling*/
 .form {
   margin: auto;

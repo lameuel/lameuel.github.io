@@ -141,6 +141,8 @@ body {
   color: #000000;
   text-align: left;
   font-size: 1.2em;
+	margin-left:.4em;
+	margin-right:.4em;
 }
 #nuevopacto {
   color: rgba(3, 223, 252);

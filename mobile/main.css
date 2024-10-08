@@ -193,7 +193,7 @@ body {
   border-width: thick;
   z-index: 7;
   border-color: antiquewhite;
-  padding: .3%;
+  padding: .2em;
   margin-right: 7vw;
   max-width: 2000px;
 }

@@ -163,6 +163,9 @@ body {
   z-index: 6;
   position: relative;
 }
+.notelink:hover {
+	text-decoration: underline;
+}
 .note {
   display: none;
   color: #CE0CBB;
@@ -229,10 +232,10 @@ a.notelink:link, a.notelink:visited, a.notelink:hover, a.notelink:active {
 				text-decoration-line: none;
 	
 			}
-			.column1, .column2 {
+.column1, .column2 {
 				text-align: left;
 				display:inline-block;
-				width:40%;
+				width:47%;
 			}
 /*Contact Page Styling*/
 .form {

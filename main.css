@@ -71,8 +71,6 @@ body {
   margin: 0;
 }
 .dropdown-content {
-  left: 0;
-  right: 0;
   display: none;
   position: absolute;
   background: url("resources/sky-wallpaper-high-definition.jpg");
@@ -83,10 +81,11 @@ body {
   border: medium ridge rgba(255, 255, 255, 1.00);
   border-top: none;
   z-index: 99;
+	width:100%;
 }
 .dropdown-content a {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 6em;
 	text-shadow:
     -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
 }
